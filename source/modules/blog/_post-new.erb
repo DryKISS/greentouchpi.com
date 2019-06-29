@@ -1,0 +1,83 @@
+<%#
+Post new section
+Creates a Hero and X latest posts to showcase on the home page.
+
+It will select the latest post marked as hero
+
+@usage
+= partial 'modules/blog/post-new.erb', locals: {number: 2}
+
+@author Ian Warner <ian.warner@drykiss.com>
+@category blog
+
+@param {int} number Number of Hero images to show, default 2
+%>
+
+<%# Variable %>
+<%
+blog = 'blog'
+columns = 12 / (locals[:number] || 1)
+count = locals[:number] || 1
+config[:blogIDs] = []
+%>
+
+<div class="row">
+
+  <%# Select Hero - Exclude terms category - Exclude homepage=false %>
+  <% selectOption(blog(blog).articles.select {
+    |a| a.data.hero === true and
+    a.data.category != 'terms' and
+    a.data.homepage != false }, count).each do |article| %>
+
+    <%# Collect ID to exclude later %>
+    <% config[:blogIDs] << article.data.id %>
+
+    <%# Hero %>
+    <div class="col-md-<%= columns %>">
+      <%= partial 'modules/blog/hero.erb', locals: {
+        article: article.data,
+        url: article.url
+      } %>
+    </div>
+
+  <% end %>
+
+</div>
+
+<%# Do not show the first two articles on the news site %>
+<% if ENV['site'] != 'news.deliveroo.co.uk' %>
+
+  <%# Heading - H2 %>
+  <%= partial 'partials/molecule/heading.erb', locals: {
+    extraClass: 'text-center post-new__heading heading--noMargin',
+    tag: 'h2',
+    text: :'home.new'
+  } %>
+
+  <%# What's New %>
+  <div class="row">
+
+    <%# Select New - Exclude Hero IDs, terms category and homepage=false %>
+    <% selectOption(blog(blog).articles.select {
+      |a| (config[:blogIDs] & Array(a.data.id)).blank? and
+      a.data.category != 'terms' and
+      a.data.homepage != 'false' }, 2).each do |article| %>
+
+      <%# Collect ID to exclude later %>
+      <% config[:blogIDs] << article.data.id %>
+
+      <div class="col-xs-12 col-sm-6">
+
+        <%# Post card %>
+        <%= partial 'modules/blog/post-card.erb', locals: {
+          article: article.data,
+          url: article.url
+        } %>
+
+      </div>
+
+    <% end %>
+
+  </div>
+
+<% end %>

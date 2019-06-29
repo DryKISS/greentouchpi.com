@@ -1,0 +1,44 @@
+//
+// Pricing Table
+//
+// @author Ian Warner <ian.warner@drykiss.com>
+//----------------------------------------------------------------------------//
+
+// Pricing Table
+//----------------------------------------------------------------------------//
+.panel {
+
+    .panel-body {
+
+        // List of Treatments
+        //--------------------------------------------------------------------//
+        $treatments : ( aromatherapy, cellulite, herbal, pregnancy, reflexology, signature, sports, swedish, thai, tissue, backneck, indian );
+
+        // Loop through Treatments
+        //--------------------------------------------------------------------//
+        @each $treatment in $treatments {
+            &.#{ $treatment } {
+                background-image    : url( "/assets/images/services/#{ $treatment }.jpg" );
+                background-position : center;
+                background-repeat   : no-repeat;
+            }
+        }
+
+        // Image
+        //--------------------------------------------------------------------//
+        &.image {
+
+            background-size : cover;
+            min-height      : 130px;
+
+            h4 {
+                background-color : rgba( 255, 255, 255, 0.8 );
+                color            : #000;
+                padding          : 2px;
+            }
+
+        }
+
+    }
+
+}

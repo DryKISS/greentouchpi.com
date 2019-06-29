@@ -1,0 +1,19 @@
+##
+# Facebook YAML
+#
+# @author   Ian Warner <ian.warner@drykiss.com>
+# @category meta
+##
+
+---
+
+app :
+    id     : false
+    secret : false
+
+page :
+    id  : "453665091433980"
+    url : "https://www.facebook.com/greentouch.pi"
+
+locale :
+    en : "en_GB"

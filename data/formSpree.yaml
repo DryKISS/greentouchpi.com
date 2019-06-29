@@ -1,0 +1,13 @@
+##
+# FormSpree
+#
+# @author   Ian Warner <ian.warner@drykiss.com>
+# @category meta
+# @see      http://formspree.io/
+##
+
+---
+
+action : "//formspree.io/ian.warner@drykiss.com"
+# action : "//formspree.io/info@greentouchpi.com"
+next   : "https://greentouchpi.com/contactus/?f=s"

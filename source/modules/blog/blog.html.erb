@@ -1,0 +1,25 @@
+---
+stub: blog
+---
+
+<%#
+Blog
+This gets proxied into being the main index of the site
+
+@author Ian Warner <ian.warner@drykiss.com>
+@category blog
+%>
+
+<%# New posts %>
+<%= partial 'modules/blog/post-new.erb' %>
+
+<%# Loop through the home page categories section %>
+<%# t(:'home.category').each do |category| %>
+
+  <%# Post category %>
+  <%#= partial 'modules/blog/post-category.erb', locals: {
+    category: category[:category],
+    title: category[:text]
+  } %>
+
+<%# end %>

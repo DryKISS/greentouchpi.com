@@ -1,0 +1,45 @@
+// Sidebar
+//
+// @author Ian Warner <ian.warner@drykiss.com>
+// @category blog
+//----------------------------------------------------------------------------//
+
+// Module
+//----------------------------------------------------------------------------//
+$module: 'sidebar';
+
+// Sidebar
+//----------------------------------------------------------------------------//
+.#{$module} {
+
+  border-left: 1px solid #797878;
+  height: 100%;
+  padding: 0 10px;
+
+  // Promotion
+  //--------------------------------------------------------------------------//
+  &__promotion {
+    display: block;
+    margin: -10px;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  // Elements
+  //--------------------------------------------------------------------------//
+  &__elements {
+    margin: -10px;
+    margin-bottom: 0;
+    padding: 10px;
+    position: relative;
+  }
+
+  // Media queries - Mobile
+  //--------------------------------------------------------------------------//
+  @media only screen and (min-width: 320px) and (max-width: 767px) {
+    border-left: 0;
+    margin: 0 -15px;
+  }
+}

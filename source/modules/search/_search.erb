@@ -1,0 +1,44 @@
+<%#
+Search
+
+@author Ian Warner <ian.warner@drykiss.com>
+@category search
+%>
+
+<%# Search %>
+<%
+extraClass = ENV['site'] != 'news.deliveroo.co.uk' ? 'ng-cloak hidden-xs hidden-sm search--no-background' : nil
+ngShow = ENV['site'] != 'news.deliveroo.co.uk' ? 'ng-show="Root.searchOpen"' : nil
+%>
+
+<%# Search %>
+<section class="search <%= extraClass %>" <%= ngShow %>>
+
+  <%# Form - search %>
+  <form class="search__form" method="get" action="/search">
+
+    <%# Input - search %>
+    <%= partial 'partials/atom/input.erb', locals: {
+      button: {
+        append: {
+          extraClass: 'search__button',
+          text: :'search.button',
+          type: 'submit'
+        }
+      },
+      input: {
+        inputGroupClass: 'input-group input-group-lg',
+        name: 'q',
+        placeholder: :'search.placeholder',
+        required: true,
+        showError: false
+      },
+      label: {
+        title: :'search.placeholder',
+        extraClass: 'sr-only'
+      }
+    } %>
+
+  </form>
+
+</section>

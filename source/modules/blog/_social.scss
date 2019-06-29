@@ -1,0 +1,35 @@
+// Social
+//
+// @author Ian Warner <ian.warner@drykiss.com>
+// @category blog
+//----------------------------------------------------------------------------//
+
+// Module
+//----------------------------------------------------------------------------//
+$module: 'social';
+
+// Social
+//----------------------------------------------------------------------------//
+.#{$module} {
+
+  margin: -10px -10px 5px;
+  min-height: 230px;
+  padding: 25px 15px 0;
+  position: relative;
+
+  // Heading
+  //--------------------------------------------------------------------------//
+  &__heading {
+    border-bottom: 1px solid #797878;
+    color: $brand-primary;
+    margin-bottom: 12px;
+    padding-bottom: 5px;
+  }
+
+  // Facebook
+  //--------------------------------------------------------------------------//
+  &__facebook {
+    margin-bottom: 25px;
+  }
+
+}

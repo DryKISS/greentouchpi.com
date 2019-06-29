@@ -1,0 +1,80 @@
+// Footer
+//
+// @author Ian Warner <ian.warner@drykiss.com>
+// @category blog
+//----------------------------------------------------------------------------//
+
+// Module
+//----------------------------------------------------------------------------//
+$module: 'deliveroo-footer';
+
+// Deliveroo footer
+//----------------------------------------------------------------------------//
+.#{$module} {
+
+  background-color: #2e3333;
+  border-top: 2px solid $brand-primary;
+  padding: 30px 0;
+  position: relative;
+
+  // Logo
+  //--------------------------------------------------------------------------//
+  &__logo {
+    background-image: url('/assets/svg/deliveroo.svg');
+    background-position: bottom left;
+    background-size: 800px;
+    height: 27px;
+    margin: 0 auto 22px;
+    width: 154px;
+  }
+
+  // Button
+  //--------------------------------------------------------------------------//
+  &__button {
+    margin-bottom: 25px;
+    padding: 10px 45px;
+
+    &:hover {
+      background-color: #33d6ca;
+      border-color: #33d6ca;
+    }
+  }
+
+  // Paragraph
+  //--------------------------------------------------------------------------//
+  p {
+    color: #fff;
+    font-size: 22px;
+    line-height: 28px;
+    margin: 0 auto 34px;
+    width: 470px;
+  }
+
+  // A
+  //--------------------------------------------------------------------------//
+  &__social {
+    a {
+      color: #828585;
+      font-size: 40px;
+      margin: 0 20px;
+
+      &:hover,
+      &:focus {
+        color: #00ccbc;
+        text-decoration: none;
+      }
+    }
+  }
+
+  // Media queries - Mobile
+  //--------------------------------------------------------------------------//
+  @media only screen and (min-width: 320px) and (max-width: 767px) {
+    padding: 30px 15px;
+
+    // Paragraph
+    //------------------------------------------------------------------------//
+    p {
+      width: initial;
+    }
+  }
+}

@@ -1,0 +1,41 @@
+<%#
+Deliveroo Footer
+Used in the Corporate compeition
+
+@author Ian Warner <ian.warner@drykiss.com>
+@category blog
+%>
+
+<div class="deliveroo-footer text-center">
+
+  <div class="deliveroo-footer__logo"></div>
+
+  <p><%= t(:'deliverooFooter.strapline') %></p>
+
+  <%# Button - Deliveroo find food %>
+  <%= partial 'partials/atom/button.erb', locals: {
+    context: 'primary',
+    extraClass: 'btn-lg deliveroo-footer__button',
+    href: :'deliverooFooter.button.url',
+    text: :'deliverooFooter.button.text' } %>
+
+  <div class="deliveroo-footer__social">
+
+    <%# Facebook %>
+    <% link_to(t(:'deliverooFooter.social.facebook'), {target: '_blank', rel: 'noopener', title:'Deliveroo on Facebook'}) do %>
+      <i class="fa fa-facebook-official"></i>
+    <% end %>
+
+    <%# Twitter %>
+    <% link_to(t(:'deliverooFooter.social.twitter'), {target: '_blank', rel: 'noopener', title:'Deliveroo on Twitter'}) do %>
+      <i class="fa fa-twitter-squared"></i>
+    <% end %>
+
+    <%# Instagram %>
+    <% link_to(t(:'deliverooFooter.social.instagram'), {target: '_blank', rel: 'noopener', title:'Deliveroo on Instagram'}) do %>
+      <i class="fa fa-instagram"></i>
+    <% end %>
+
+  </div>
+
+</div>

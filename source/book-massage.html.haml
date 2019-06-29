@@ -1,0 +1,102 @@
+---
+angular:
+  controller: ContactController
+  controllerAs: contact
+stub: book
+---
+
+-# Panel
+= codeBlender 'panel', 'molecule',
+  { body: :'book.panelBody', heading: { text: :'book.panelText', small: :'book.panelSmall' } }
+
+-# Form
+- content_for :formBody do
+
+  -# Form
+  %form.contactForm{ name: 'contactForm',
+                     novalidate: true,
+                     ng: { if: "! contact.sent", submit: "contact.submitForm(formSpree, $event)" },
+                     method: 'post',
+                     role: 'form' }
+
+    -# Input - name
+    = codeBlender 'input', 'atom/form/input',
+      { input: { name: 'name',
+                 ng: { model: 'formSpree.name' },
+                 placeholder: :'book.formNamePlace',
+                 required: true },
+        label: { title: :'book.formNameLabel' } }
+
+    -# Input - mobile number
+    = codeBlender "input", "atom/form/input",
+      { input: { name: 'mobile',
+                  ng: { model: "formSpree.mobile" },
+                  placeholder: :"book.formMobilePlace",
+                  required: true,
+                  type: 'tel' },
+        label: { title: :"book.formMobileLabel" } }
+
+    -# Input - email
+    = codeBlender "input", "atom/form/input",
+      { input: { name: "email",
+                  ng: { model: "formSpree.email" },
+                  placeholder: :"book.formEmailPlace",
+                  required: true,
+                  type: 'email' },
+        label: { title: :"book.formEmailLabel" } }
+
+    -# List of treatments
+    - treatments = []
+    - t(:'treatments.treatments').each do |treatment|
+      - treatments << { value: treatment[:title] }
+
+    -# Select - treatment
+    = codeBlender "select", "atom/form/select",
+      { array: treatments,
+        label: { title: :"book.formTreatLabel" },
+        name:  "treatment",
+        ng:    { model: "formSpree.treatment" } }
+
+    -# Input - Date
+    = codeBlender "input", "atom/form/input",
+      { input: { name: "date",
+                  ng:   { model: "formSpree.date" },
+                  type: "date" },
+        label: { title: "Date" } }
+
+    -# Input - time
+    = codeBlender "input", "atom/form/input",
+      { input: { name: "time",
+                  ng:   { model: "formSpree.time" },
+                  type: "time" },
+        label: { title: "Time" } }
+
+    -# Textarea - message
+    = codeBlender "textarea", "atom/form/textarea",
+      { label: { title:       :"book.formMsgLabel" },
+                  name:        "message",
+                  ng:          { model: "formSpree.message" },
+                  placeholder: :"book.formMsgPlace",
+                  required:    true,
+                  rows:        "5" }
+
+    -# Button - submit
+    = codeBlender "button", "atom",
+      { context: "primary",
+        ng:      { disabled: "contactForm.$invalid" },
+        text:    :"book.formButton",
+        type:    "submit" }
+
+  -# Thank you
+  %thankYou{ ng: { if: "contact.sent" } }
+    Thank you for contacting Green Touch, we will respond very
+    soon, via phone or email.
+
+-# Booking panel
+= codeBlender "panel", "molecule",
+  { body:      yield_content( :formBody ),
+    context:   "primary",
+    bodyClass: "contactFormPanel",
+    heading:   { text:  :"book.formPanelText",
+                 small: :"book.formPanelSmall",
+                 type:  'h2' } }

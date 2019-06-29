@@ -1,0 +1,33 @@
+---
+stub: tea
+---
+
+-# Heading panel
+= codeBlender 'panel', 'molecule',
+  { body: :'tea.panelBody', heading: { text: :'tea.panelText', small: :'tea.panelSmall' } }
+
+-# Loop through the Teas in the Locale
+- t(:'tea.teas').each_slice(3) do |slice|
+
+  -# Bootstrap Row
+  .row
+
+    -# Work each slice
+    - slice.each do |value|
+
+      -# Bootstrap Columns
+      .col-md-4.col-sm-6.col-xs-12
+
+        -# Image
+        - image = codeBlender 'image', 'atom',
+                  { alt: value[:text],
+                    src: "tea/#{value[:image]}.jpg",
+                    extraClass: 'img-responsive' }
+
+        -# Panel
+        = codeBlender 'panel', 'molecule',
+          { body:    image,
+            context: value[ :context ],
+            footer:  value[ :footer ],
+            heading: { text: value[ :text ],
+                        tag:  "h2" } }

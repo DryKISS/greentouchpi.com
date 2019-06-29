@@ -1,0 +1,26 @@
+##
+# Google
+#
+# @author   Ian Warner <ian.warner@drykiss.com>
+# @category meta
+##
+
+---
+
+api : "AIzaSyA2fnjDVKi8G4eDXllOyplF_APmDXtb2hk"
+
+analytics :
+    active : true
+    code   : "UA-49973751-1"
+    url    : "greentouchpi.com"
+
+adsense        : false
+search         : false
+webmasterTools : "ue-whwcxoKGYl-gmoCcpYKXtztRIYkCZRp00e5sxqtM"
+
+client :
+    id     : "908346284125-9nc8k5avs5gsg4f53j058jotsedtodgc.apps.googleusercontent.com"
+    secret : "ERR0xB-H_csJEdn2IPZ4MxWW"
+
+page :
+    url : "https://plus.google.com/109354139331368969621/about"

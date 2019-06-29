@@ -1,0 +1,123 @@
+<%#
+Navigation
+Loop through navigation in Locale file
+
+@author Ian Warner <ian.warner@drykiss.com>
+%>
+
+<%# Variable %>
+<% type = !I18n.exists?(:'navigation.type') ? 'navbar-default' : "navbar-#{t(:'navigation.type')}" %>
+
+<%# Navbar %>
+<nav class="navbar <%= type %> navbar-fixed-top" id="navbar" role="navigation">
+
+  <div class="container">
+
+    <%# Header %>
+    <div class="navbar-header">
+
+      <button
+        class="navbar-toggle collapsed"
+        data-toggle="collapse"
+        data-target="#navbar-collapse"
+        aria-expanded="false"
+      >
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
+      <%# Brand link %>
+      <% link_to localePath('/index.html'), { class: 'navbar-brand' } do %>
+        <span itemprop="headline" class="sr-only">Deliveroo</span>
+      <% end %>
+
+    </div>
+
+    <%# Create the collapse area - target without the # %>
+    <div class="navbar-collapse collapse" id="navbar-collapse">
+
+      <%# Search - Hidden on Desktop %>
+      <span class="hidden-sm hidden-md hidden-lg">
+
+        <form class="navbar-form navbar-left" role="search" method="get" action="/search">
+          <div class="input-group">
+
+            <input type="text" class="form-control" placeholder="Search" name="q">
+
+            <div class="input-group-btn">
+              <button class="btn btn-primary" type="submit">
+                <i class="fa-search"></i>
+              </button>
+            </div>
+
+          </div>
+        </form>
+
+      </span>
+
+      <%# Search - Hidden on Mobile %>
+      <%# Not Newsroom %>
+      <% if ENV['site'] != 'news.deliveroo.co.uk' %>
+        <span class="navbar__search hidden-xs">
+          <ul class="nav navbar-nav navbar-right">
+            <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+
+              <%# Link %>
+              <a
+                href="javascript:;"
+                ng-click="Root.searchOpen = !Root.searchOpen"
+                itemprop="item"
+                itemscope="itemscope"
+                itemtype="http://schema.org/Thing"
+              >
+
+                <%# Icon %>
+                <%= partial 'partials/atom/icon.erb', locals: { icon: 'fa-search' } %>
+
+              </a>
+
+              <meta itemprop="position" content="1">
+
+            </li>
+          </ul>
+        </span>
+      <% end %>
+
+      <%# Loop through navigation in Locale file %>
+      <% t(:navigation).select{|k| k.to_s.match(/(right|left)/)}.each do |entry| %>
+
+        <ul class="nav navbar-nav navbar-<%= entry[0] %>">
+
+        <%# Loop through each side %>
+          <% entry[1].each do |side| %>
+
+            <%# Active navigation %>
+            <% if side[:link] %>
+              <% side[:active] = (current_page.url == side[:link][:url]) ? true : false %>
+            <% end %>
+
+            <%# Dropdown %>
+            <% if side[:dropdown] %>
+              <%= partial 'partials/molecule/dropdown-navbar', locals: {
+                button: side[:dropdown][:button],
+                list: {array: side[:dropdown][:items]}} %>
+
+            <%# List %>
+            <% else %>
+              <%= partial 'partials/atom/list-ul', locals: {array: [side], navBar: true, extraClass: side[:extraClass]} %>
+
+            <% end %>
+
+          <% end %>
+
+        </ul>
+
+      <% end %>
+
+    </div>
+
+  </div>
+
+</nav>

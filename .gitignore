@@ -1,0 +1,91 @@
+# Environment #
+###############
+.env
+.parsed
+
+# Middleman #
+#############
+.sass-cache
+.cache
+build
+.bundle
+.divshot-cache
+.mm-pid-*
+.rbenv-version
+.ruby-version
+.rvmrc
+bin
+.tmp
+source/blogs
+source/assets/images/blogs
+source/locales
+
+# Composer #
+############
+vendor
+
+# Bower #
+#########
+bower_components
+
+# GIT #
+#######
+!.gitkeep
+
+# IDE     #
+###########
+*.sublime-*
+.vscode
+
+# Cordova #
+###########
+hooks
+platforms
+plugins
+
+# Compiled source #
+###################
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+# Packages #
+############
+# It's better to unpack these files and commit the raw source git has its own built in compression methods
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# Logs and databases #
+######################
+*.log
+*.sql
+*.sqlite
+
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Node #
+########
+node_modules/*
+npm-debug.log
+dist
+
+# coverage #
+############
+/coverage/

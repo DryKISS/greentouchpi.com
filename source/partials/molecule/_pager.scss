@@ -1,0 +1,35 @@
+// Pager
+//
+// @usage
+// @import "~css/_lib/pager";
+//
+// @author Ian Warner <ian.warner@drykiss.com>
+// @category molecule
+//----------------------------------------------------------------------------//
+
+// Module
+//----------------------------------------------------------------------------//
+$module: 'pager';
+
+// Pager
+//----------------------------------------------------------------------------//
+.#{$module} {
+
+  a {
+    color: #fff;
+
+    &:hover {
+      border: 1px solid $pager-hover-border;
+    }
+  }
+
+  // Media queries - Mobile
+  //--------------------------------------------------------------------------//
+  @media only screen and (min-width: 320px) and (max-width: 767px) {
+    li > a {
+      margin-bottom: 5px;
+      width: 100%;
+    }
+  }
+
+}

@@ -1,0 +1,38 @@
+<%#
+App Store
+Creates the mobile application store links for each locale
+
+@author Ian Warner <ian.warner@drykiss.com>
+@category blog
+
+@todo Put the app store elelemnt in a loop
+@todo Create some default images if not exist
+%>
+
+<section class="app-store text-center">
+
+  <%# Image - Deliveroo icon %>
+  <%= partial 'partials/atom/image.erb', locals: {
+    alt: 'Deliveroo application',
+    extraClass: 'app-store__icon',
+    src: 'app-store/icon-app.png'} %>
+
+  <p><%= t(:'appStore.strapline') %></p>
+
+  <%# iTunes %>
+  <% link_to(t(:'appStore.apple'), {target: '_blank', rel: 'noopener'}) do %>
+    <%= partial 'partials/atom/image.erb', locals: {
+      alt:'Deliveroo iPhone application',
+      extraClass: 'app-store__itunes',
+      src: "app-store/apple-store-#{locale}.svg"} %>
+  <% end %>
+
+  <%# Google play %>
+  <% link_to(t(:'appStore.google'), {target: '_blank', rel: 'noopener'}) do %>
+    <%= partial 'partials/atom/image.erb', locals: {
+      alt:'Deliveroo Android application',
+      extraClass: 'app-store__google',
+      src: "app-store/google-play-#{locale}.svg"} %>
+  <% end %>
+
+</section>

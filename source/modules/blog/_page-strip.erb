@@ -1,0 +1,34 @@
+<%#
+Page strip
+
+@usage
+partial 'modules/blog/page-strip.erb', locals: {text: 'Admin'}
+
+@author Ian Warner <ian.warner@drykiss.com>
+@category blog
+
+@todo Image is constrained to Gold Card
+@todo Put the text into the locale
+%>
+
+<%# Page strip %>
+<div class="page-strip">
+
+  <%# Check if image %>
+  <% if locals[:img] %>
+
+    <%# Image - Gold card %>
+    <%= partial 'partials/atom/image.erb', locals: {
+      alt: 'The Gold Card',
+      extraClass: 'img-responsive',
+      src: "/assets/images/goldcard/gold-card-#{locale}.svg"} %>
+
+  <% end %>
+
+  <%# Heading - H1 %>
+  <%= partial 'partials/molecule/heading.erb', locals: {
+    extraClass: 'page-strip__heading',
+    small: locals[:small],
+    text: locals[:text]} %>
+
+</div>

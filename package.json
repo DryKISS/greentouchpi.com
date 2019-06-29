@@ -1,0 +1,35 @@
+{
+  "author": "Ian Warner <ian.warner@drykiss.com>",
+  "license": "MIT",
+  "name": "greentouchpi",
+  "version": "1.0.0",
+  "description": "Greentouch PI Massage and Spa",
+  "main": "source/assets/javascripts/body.js",
+  "private": true,
+  "homepage": "https://greentouchpi.com",
+  "scripts": {
+    "start": "NO_CONTRACTS=true bundle exec middleman server",
+    "build": "NO_CONTRACTS=true bundle exec middleman build --clean",
+    "deploy": "NO_CONTRACTS=true bundle exec middleman deploy"
+  },
+  "dependencies": {
+    "angular": "",
+    "bootstrap-sass": "",
+    "font-awesome": "",
+    "jquery": ""
+  },
+  "devDependencies": {
+    "clean-webpack-plugin": "",
+    "coffee-loader": "",
+    "coffeescript": "",
+    "css-loader": "",
+    "extract-text-webpack-plugin": "",
+    "file-loader": "",
+    "node-sass": "",
+    "resolve-url-loader": "",
+    "sass-loader": "",
+    "style-loader": "",
+    "url-loader": "",
+    "webpack": ""
+  }
+}

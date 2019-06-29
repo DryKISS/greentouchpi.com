@@ -1,0 +1,55 @@
+##
+# Navigation, Navbar configuration
+#
+# @author Ian Warner <ian.warner@drykiss.com>
+# @category meta
+##
+
+---
+
+# Whether to show the navigation bar
+navbar : true
+id     : false
+
+# Paths to the partials to display navigation above and below
+above : "partial/_lib/navAbove"
+below : false
+
+# Bootstrap container class
+container : "container"
+
+# Brand
+brand :
+
+    active : false
+
+    heading :
+        active : false
+
+    link :
+        url : "/index.html"
+
+    icon :
+        active : false
+        icon   : false
+
+    logo :
+        active : false
+        alt    : "Greentouch PI"
+        width  : 100
+        height : 100
+
+    text :
+        active : false
+        text   : "Home"
+
+extraClass : "navbar-default navbar-static-top"
+
+ng :
+    controller : false
+    show       : false
+    cloak      : false
+
+type     : false
+uLClass  : "navbar-left"
+wrapper  : false

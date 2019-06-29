@@ -1,0 +1,34 @@
+// Blog category
+//
+// @usage
+// @import "~local/blog-category";
+//
+// @author Ian Warner <ian.warner@drykiss.com>
+// @category blog
+//----------------------------------------------------------------------------//
+
+// Module
+//----------------------------------------------------------------------------//
+$module: 'blog-category';
+
+// Blog category
+//----------------------------------------------------------------------------//
+.#{$module} {
+
+  // .mainContent {
+    background-color: #fff;
+    padding: 10px;
+  // }
+
+  // Term post card detail
+  //--------------------------------------------------------------------------//
+  &.terms .post-card--detail {
+    height: 65px;
+  }
+
+  // Media queries - Mobile
+  //--------------------------------------------------------------------------//
+  // @media only screen and (min-width: 320px) and (max-width: 767px) {
+  //   margin-top: 171px;
+  // }
+}

@@ -1,0 +1,42 @@
+---
+stub: membership
+---
+
+-# Bootstrap row
+.row
+
+  -# Plans
+  - t(:'membership.plans').each do |value|
+
+    -# Bootstrap column
+    .col-md-6.col-sm-6.col-xs-12
+
+      -# Pricing Table
+      = codeBlender "pricing-table", "molecule",
+        { array: value[:items],
+          context: value[:colour],
+          heading: { text: value[:text] },
+          subheading: value[:small] }
+
+-# Bootstrap row
+.row
+
+  -# Bootstrap column
+  .col-md-6
+
+    -# Panel - Referral scheme
+    = codeBlender "panel", "molecule",
+      { body: :'membership.panel02Body',
+        heading: { text: :"membership.panel02Text",
+                   small: :"membership.panel02Small",
+                   tag: 'h3' } }
+
+  -# Bootstrap column
+  .col-md-6
+
+    -# Panel - Terms and conditions
+    = codeBlender "panel", "molecule",
+      { body: :'membership.panel03Body',
+        heading: { text: :"membership.panel03Text",
+                   small: :"membership.panel03Small",
+                   tag: 'h3' } }

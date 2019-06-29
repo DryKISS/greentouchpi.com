@@ -1,0 +1,26 @@
+##
+# Footer
+#
+# @author   Ian Warner <ian.warner@drykiss.com>
+# @category config
+##
+
+---
+
+# Global
+container  : "container"
+extraClass : false
+
+# copyright
+copyright :
+    active : true
+    center : false
+
+# Footer
+footer:
+  active: true
+  extraClass: false
+  sticky: false
+
+# Logo
+drykiss: true

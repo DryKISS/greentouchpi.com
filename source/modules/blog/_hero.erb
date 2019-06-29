@@ -1,0 +1,78 @@
+<%#
+Hero
+Showcases a single post with Hero image and heading
+
+@author Ian Warner <ian.warner@drykiss.com>
+@category blog
+
+@param {object} article Article data
+@param {string} url Article URL
+
+@todo Add the structured data to this element
+%>
+
+<%# Variable %>
+<%
+news = ENV['site'] === 'news.deliveroo.co.uk' || false
+article = locals[:article]
+url = locals[:url]
+%>
+
+<%# Hero %>
+<section class="hero">
+
+  <%# Check that an image is present %>
+  <% if article.image %>
+
+    <div class="hero__image">
+
+      <%# Link to article %>
+      <% link_to(url) do %>
+
+        <%# Image - hero image %>
+        <%= partial 'partials/atom/image.erb', locals: {
+          extraClass: 'img-responsive',
+          src: article.image,
+          alt: article.title
+        } %>
+
+      <% end %>
+
+    </div>
+
+  <% end %>
+
+  <%# Intro - contains slant in after %>
+  <div class="hero__intro <%= news ? 'hero--news' : nil %>">
+
+    <%# Date %>
+    <% if ENV['site'] === 'news.deliveroo.co.uk' %>
+
+      <time
+        class="hero__date"
+        pubdate="pubdate"
+        itemprop="datePublished"
+        datetime="<%= article.date.to_date.strftime('%FT%T') %>Z"
+      >
+        <%= article.date.to_date.strftime('%-d %B %Y') %>
+      </time>
+
+    <% end %>
+
+    <%# Heading - H1 %>
+    <%= partial 'partials/molecule/heading.erb', locals: {
+      extraClass: 'hero__heading heading--noMargin',
+      href: url,
+      text: article.heading
+    } %>
+
+    <%# Button - Read more %>
+    <%= partial 'partials/atom/button.erb', locals: {
+      extraClass: 'hero__button',
+      href: url,
+      text: :'home.hero.button'
+    } %>
+
+  </div>
+
+</section>

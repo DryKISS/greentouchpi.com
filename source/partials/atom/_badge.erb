@@ -1,0 +1,12 @@
+<%#
+Badge
+
+@author Ian Warner <ian.warner@drykiss.com>
+@category atom
+%>
+
+<% extraClass = locals[:extraClass] || nil %>
+
+<span class="badge <%= extraClass %>">
+  <%= string(locals[:text]) %>
+</span>

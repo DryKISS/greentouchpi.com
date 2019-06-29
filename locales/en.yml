@@ -1,0 +1,1039 @@
+# English locale
+#
+# @author Ian Warner <ian.warner@drykiss.com>
+
+---
+
+# English
+en:
+
+  # Locale
+  locale: en
+  url: https://greentouchpi.com
+
+  # Facebook
+  facebook:
+    locale: en_GB
+
+  # MailChimp
+  mailChimp:
+    small: Get our products/news earlier than others, let's get in touch.
+    button: Subscribe
+    email: Enter your email address
+    firstName: First name
+    lastName: Last name
+
+  # MailChimp Panel
+  panel:
+    title: Join our newsletter
+
+  # Meta
+  meta :
+    publisher: Green Touch PI
+    publisherAddress: ian.warner@drykiss.com
+    rights: "&copy; 2018, Green Touch PI Ltd. All rights reserved."
+    itemType: LocalBusiness
+    siteName: Greentouch PI
+
+    # gift
+    blog:
+      author: DryKISS
+      description:
+        Read for the latest articles and blogs from Greentouch Massage in SW19
+      image: /assets/images/carousel/stunning-decor.jpg
+      subject: Greentouch PI Blog
+      title: Massage and Greentouch Promotional articles and blogs
+      type: website
+
+    # Contact
+    contactus:
+      author: DryKISS
+      description:
+        Contact Green Touch at our Wimbledon branch. +44 208 540 3888.
+        We will respond within 24 hours of any request for a massage treatment.
+      image: /assets/images/carousel/stunning-decor.jpg
+      subject: Contact Greentouch
+      title: Contact Green Touch Spa and Massage in Wimbledon London
+      type: website
+
+    # Book Massage
+    book:
+      author: DryKISS
+      description:
+        Reserve and Book and massage treatment with Greentouch in Wimbledon.
+        We will respond within 24 hours of any request for a massage treatment.
+      image: /assets/images/carousel/stunning-decor.jpg
+      subject: Book Greentouch
+      title: Book a Green Touch Massage treatment in Wimbledon London
+      type: website
+
+    # gift
+    gift:
+      author: DryKISS
+      description:
+        Gift cards for massage events, such as Valentines, Mothers Day, Birthdays and Christmas.
+      image: /assets/images/carousel/stunning-decor.jpg
+      subject: Greentouch Gift Cards
+      title: Purchase Gift Cards from Green Touch Spa and Massage in Wimbledon London
+      type: website
+
+    # Index
+    index:
+      author: "DryKISS"
+      description: |
+        Swedish massage, Aromatherapy, Sports massage, Reflexology, Thai
+        massage in Wimbledon, London. Full body massage, acupressure and
+        meditation. Detox, release tension, stress, pain, toxin, improve
+        circulation.
+      image: "/assets/images/carousel/stunning-decor.jpg"
+      subject: "Greentouch information"
+      title: "Green Touch, Swedish massage and Thai massage in Wimbledon, London, UK SW19 8PL"
+      type: "website"
+
+    # Membership
+    membership:
+      author: "DryKISS"
+      image: "/assets/images/carousel/stunning-decor.jpg"
+      description: "Amazing Group plan Buy 5 treatments get 1 FREE. Swedish massage and traditional Thai massage treatment at Wimbledon, London branch."
+      subject: "Greentouch group plans"
+      title: "Green Touch Group Plans. Buy 5 Massage Treatments Get 1 FREE"
+      type: "website"
+
+    # Special Offer
+    specialoffer:
+      author: "DryKISS"
+      description: "Promotion specials on Swedish and Thai massage at Green Touch Spa and Massage in Wimbledon, London"
+      image: "/assets/images/carousel/stunning-decor.jpg"
+      subject: "Greentouch promotions"
+      type: "website"
+      title: "50% off massage treatments and other promotional sales at Green Touch Wimbledon"
+
+    # Tea
+    tea:
+      author: "DryKISS"
+      description: "Chinese herbal and therapeutic Tea from Green Touch Spa and Massage. Relax with a Free drink before each treatment."
+      image: "/assets/images/carousel/stunning-decor.jpg"
+      subject: "Greentouch tea"
+      title: "Chinese herbal and therapeutic Tea from Green Touch Spa and Massage."
+      type: "website"
+
+    # Treatment
+    treatment:
+      author: "DryKISS"
+      description: "Amazing Thai and Swedish Massage Treatments. New hot stone and head massage available at Green Touch Spa and Massage Wimbledon"
+      image: "/assets/images/carousel/stunning-decor.jpg"
+      title: "Swedish, traditional Thai, head and other amazing massage treatments - Green Touch Spa and Massage"
+      subject: "Greentouch treatments and services"
+      type: "website"
+
+    # Terms and Conditions
+    terms:
+      author: DryKISS
+      image: /assets/images/carousel/stunning-decor.jpg
+      description: Terms and conditions for treatments and Green Touch Spa and Massage, Wimbledon, London
+      subject: Greentouch terms and conditions
+      title: Terms and conditions for Green Touch Spa and Massage near Wimbledon Village
+      type: website
+
+  # Navigation
+  navigation:
+
+    # Left
+    left:
+
+      # Home
+      - text: Home
+        link: { url: / }
+
+      # Treatments
+      - text: Massages
+        link: { url: /treatment }
+
+      # Membership
+      - text: Treatment plans
+        link: { url: /membership }
+
+      # Promotions
+      - text: Promotions
+        link: { url: /specialoffer }
+
+      # Book Treatment
+      - text: Book Treatment
+        link: { url: /book-massage }
+
+      # Blog
+      - text: Blog
+        link: { url: /blog }
+
+      # Tea
+      - text: Tea
+        link: { url: /tea }
+
+      # Contact Us
+      - text: Contact Us
+        link: { url: /contactus }
+
+    # Right
+    right:
+
+      # Call Us
+      - text: "Phone : +44 208 540 3888"
+        link: { url: "tel:+442085403888" }
+
+  # Sidebar
+  sidebar:
+
+    # Gift Cards
+    # - active: true
+    #   title: Valentine's Gift Cards
+    #   context: primary
+    #   button: Buy Now
+    #   url: /gift-cards
+    #   body: |
+    #     Purchase a massage Gift card for your loved one
+
+    # Promo
+    - active: true
+      title: New treatments
+      context: info
+      button: Learn more
+      url: /treatment
+      body: |
+        Fantastic new massage treatments for this autumn. Click to learn
+        more or <a href="/contactus" title="contact us">contact us</a>
+        with any queries.
+
+        <ul>
+          <li>Pregnancy massage</li>
+          <li>Cellulite massage</li>
+        </ul>
+
+    # Promo
+    - active: true
+      title: "Group Plan"
+      context: "warning"
+      button: "Learn more"
+      url:  "/membership"
+      body: |
+
+          Buy 5 treatments get 1 free.
+
+          <ul>
+              <li>£350 for 6 hours of treatments</li>
+              <li>Share between any friends and family</li>
+          </ul>
+
+    # Promo
+    - active: true
+      title   : "New customers"
+      context : "primary"
+      button  : "Learn more"
+      url     :  "/membership"
+      body    : |
+
+          New customers get £10 off their first 1 hour massage treatment
+
+    # Promo
+    - active: true
+      title: Refer a friend
+      context: success
+      button: Learn more
+      url:  /specialoffer
+      body: Receive a complimentary 15 minutes, added to your next 1 hour massage
+
+  # Gift
+  gift:
+    # Heading panel
+    panelText: Purchase Massage Gift Cards Directly
+    panelBody:
+      We are now pleased to offer Gift Cards Directly from this secure site.
+      <br><br>
+
+      - Simply click the Pay with Card button on the amount you wish to purchase.
+      <br>
+      - Our payment provider is Stripe, the same company that Facebook use.
+      <br>
+      - We will process the Gift Card and post it to the recipient as soon as possible.
+      <br>
+      - Please make sure the Shipping address is correctly added for your loved one.
+      <br><br>
+
+      Gift cards go up in increments of &pound;70 so the benefactor can enjoy a
+      full massage. If they choose a more expensive treatment on the day, we will
+      charge the extra. We will inform them of this at booking time.
+
+
+    # Cart
+    cartText: Choose the Gift Card Value
+
+  # Blog
+  blog:
+    readTime: Read time
+    share: Share this article
+
+  tag:
+    title: Tagged
+
+  author:
+    title: Author
+
+  # Book
+  book:
+
+    # Heading panel
+    panelText: Booking a massage
+    panelSmall: to reserve a time, please complete the form below or phone us
+    panelBody: |
+      Please complete the form below, and we will check the availabilty and call
+      you back as soon as possible. If the time is unavailable we will recommend
+      an alternative time. Please add any personal requirements in the notes section.
+      <br><br>
+
+      E-mail us at : <a href="mailto:info@greentouchpi.com" title="Email us">info@greentouchpi.com</a>
+      or give us a call on : <a href="tel:+442085403888" title="Phone us">+442085403888</a>
+
+    # Form
+    formPanelText: Booking Form
+    formPanelSmall: (*) Required
+    formNameLabel: "* Full name"
+    formNamePlace: Enter first and surname
+    formMobileLabel: "* Mobile Number"
+    formMobilePlace: Enter your mobile phone number
+    formEmailLabel: "* Email"
+    formEmailPlace: Enter email address
+    formTreatLabel: Treatment
+    formDateLabel: Date and Time
+    formMsgLabel: "* Notes"
+    formMsgPlace: Enter personal message or note
+    formButton: Submit
+
+  # Contact
+  contact:
+
+    # Heading panel
+    panelText: Contact and Directions
+    panelBody: |
+      Want to ask us something? Or share some Feedback? We’d love to hear from you,
+      please e-mail us at : <a href="mailto:info@greentouchpi.com" title="Email us">info@greentouchpi.com</a>
+      or give us a call on : <a href="tel:+442085403888" title="Phone us">+442085403888</a>
+
+    # Map panel
+    mapText: Map and Directions
+
+    # Address panel
+    addressTitle: Address and Contact details
+    address1: 1B Kings Road
+    address2: Wimbledon
+    address3: SW19 8PL
+
+    openText: Opening Times - 7 days a week
+    open:
+      - "Monday - Saturday: 11am - 9pm"
+      - "Sunday: 11am - 8pm"
+      - "Bank Holidays: 11am - 8pm"
+      - Last appointment is 90 minutes before close
+      - Closed during Easter, Christmas and New Year.
+
+    # Social
+    socialText: Follow Us on Facebook
+
+  # Home
+  home:
+
+    new: Latest articles
+    hero:
+      button: Read More
+
+    # Heading Panel
+    panel01Text: "Green Touch, Swedish and Thai massage in Wimbledon"
+    panel01Small: "London, UK"
+    panel01Body: |
+      Massage helps relieve stress, neck pain, tension, lower back pain
+      and anxiety. If you just want to relax and indulge, we welcome you
+      to experience our full body sports massage, Reflexology,
+      Aromatherapy or Thai massage in the heart of Wimbledon, London.
+
+    # Carousel
+    carousel:
+      - image :
+          carouselCaption :
+            text  : "Stunning décor"
+            body  : "Asian influenced interior design to create the perfect atmosphere"
+          extraClass : "img-responsive"
+          src        : "carousel/stunning-decor.jpg"
+      - image :
+          carouselCaption :
+            text  : "Treatment Room"
+            body  : "Comfortable, stylish room, massage table and fresh linens every time."
+          extraClass : "img-responsive"
+          src        : "carousel/treatment-room.jpg"
+      - image :
+          carouselCaption :
+            text  : "Massage rooms"
+            body  : "Relax and unwind at Green Touch in our massage rooms"
+          extraClass : "img-responsive"
+          src        : "carousel/massage-rooms.jpg"
+
+    # Body Panel
+    panel02Title: "Leave the headache and stress of life behind, indulge in a Massage!"
+    panel02Body: |
+      Based in Wimbledon, servicing south west London and the surrounding
+      south Wimbledon area. Just 2 minutes walk from Wimbledon station
+      which is on the District Line or overland trains, and across from Al
+      Forno Italian restaurant.
+      <a href="/contactus" title=""View the Map"">View map</a>.
+      <br><br>
+
+      Green Touch Spa and Massage offers Swedish massage, authentic
+      traditional <a href="/treatment" title="Green Touch Thai
+      Massage">Thai Massage</a>, Reflexology, Hot Stone massage,
+      Aromatherapy, Sports massage, and other full body massage treatments
+      guaranteed to make you feel fantastic. To help relieve pain,
+      tension, improve circulation, detox, improve sleep or just for a
+      relaxing indulgent massage. We incorporate all massage techniques,
+      quality massage oils and all treatments are tailored to ensure you
+      leave with a spring in your step.
+      <br><br>
+
+      A popular treatment at Green Touch Spa and Massage is our amazing
+      <a href="/treatment" title="anti-stress Swedish massage">anti-stress Swedish massage</a>.
+      You can benefit from our exclusive <a href="/membership" title="membership scheme">group massage plan</a>
+      Buy 5 treatments and get 1 free.
+      <br><br>
+
+      Our Spa has a clean and modern oriental décor, with real mahogany
+      doors, candlelit corridors, Thai inspired art and asian
+      ornaments. You will be offered a complimentary tea/water upon your
+      arrival with our upmost professional service.
+      <br><br>
+
+      All massages can be tailored to suit your taste and style.
+      For any other requirements please
+      <a href="/contactus" title="contact us">contact us</a>.
+
+  # Membership
+  membership:
+
+    # Plans
+    plans:
+
+      - colour: success
+        text: Group Plan
+        small: Buy 5 treatments and get 1 FREE. *
+        items:
+          - title: No expiry date
+          - title: £350 for 6 hours
+          - title: Can be shared by all family and friends
+          - title: Minimum for one hour treatments
+          - title: Excludes pregnancy massage
+
+      - colour: info
+        text: Pay as You Go
+        small: Book a treatment, turn up and pay
+        items:
+          - title: Treatment prices of £40, £70 and £80 per hour.
+          - title: 30 mins £40, 60 mins £70 and 90 mins £95.
+          - title: Extra £5 for Hot Stone, Aromatherapay and Celluite.
+          - title: Pay by cash or card at the treatment end
+          - title: Communicate your prefered pressure and style
+
+    # Schemes
+    panel02Text: Schemes
+    panel02Small: Refer a friend, Gift vouchers and group bookings
+    panel02Body:
+      <ul>
+        <li>Refer a friend (new customers only), they receive &pound;10 off their first treatment</li>
+        <li>As an existing customer, you will recieve 15 minutes free on your next 1 hour massage treatment</li>
+        <li>Gift vouchers available.</li>
+        <li>We can also cater for group bookings</li>
+      </ul>
+
+    # Conditions
+    panel03Text: Conditions
+    panel03Small: Easy to understand terms and conditions
+    panel03Body:
+      <ul>
+          <li>
+              Please note that you cannot use our schemes in conjunction
+              with other schemes.
+          </li>
+          <li>
+              Please read full
+              <a href="/terms-and-conditions" title="Terms and Conditions">terms and conditions</a>
+          </li>
+          <li>
+              For further information please
+              <a href="/contactus" title="contact us">contact us</a>
+          </li>
+      </ul>
+
+      <h5>References</h5>
+
+      <ul>
+          <li>
+              * With the exception of Aromatherapy, Cellulite and Hot Stone
+              massages, which can be provided at a £5 extra charge.
+          </li>
+          <li>** non refundable, excludes pregancy massages treatment</li>
+      </ul>
+
+  # Promotions
+  promotions:
+
+    # Heading Panel
+    panelText: Offers and promotions
+    panelSmall: Visit here to find out the latest deals and discounts
+    panelBody:
+      We like to give back to our customers and run special promtions
+      during Valentine day, Easter long weekend, Mothers day, Fathers day,
+      British Summer holidays and even Christmas.
+      <br><br>
+
+      Please bookmark this page, and check before you book your massage for
+      any discounts you may be entitled to!
+      <br><br>
+
+      Please <a href="/contactus" title="contact us">contact us</a>
+      with any queries. <a href="/terms-and-conditions" title="Terms and Conditions">Terms and conditions</a> apply.
+
+    # Promotions
+    promotions:
+
+      # Promo
+      - text: Birthday Treat
+        context: success
+        body:
+          We will make sure your birthday celebration is a time to remember,
+          providing an immaculate service with your massage treatment.
+          <br><br>
+
+          And from our hearts you will receive a special box of limited edition
+          Chinese Tea.
+          <br><br>
+
+          Please <a href="/contactus" title="contact us">contact us</a>
+          with any queries.
+          <br><br>
+
+          <a href="/terms-and-conditions" title="Terms and Conditions">Terms and conditions</a> apply.
+
+      # Promo
+      - text: New customers
+        context: info
+        body:
+          New customers get &pound;10 off their first 1 hour massage treatment
+          <br><br>
+
+          Please <a href="/contactus" title="contact us">contact us</a>
+          with any queries.
+          <br><br>
+
+          <a href="/terms-and-conditions" title="Terms and Conditions">Terms and conditions</a> apply.
+
+      # Promo
+      - text: Refer a friend
+        context: primary
+        body:
+          Receive a complimentary 15 minutes, added to your next 1 hour massage
+          <br><br>
+
+          Please <a href="/contactus" title="contact us">contact us</a>
+          with any queries.
+          <br><br>
+
+          <a href="/terms-and-conditions" title="Terms and Conditions">Terms and conditions</a> apply.
+
+  # Tea
+  tea:
+
+    # Heading Panel
+    panelText: Amazing Chinese tea.
+    panelSmall: Compliment your massage treatment with our fragrant, healthy tea from China.
+    panelBody:
+      Aside from offering the best quality body massages, we are proud to present
+      our well-known tea range. Used in conjunction with massage therapoes they can
+      support a healthy body and mind.
+
+    # Teas
+    teas:
+
+      # Green
+      - context: info
+        text: Green Tea
+        image: green
+        footer:
+          The majority of Green Tea benefits stem from the powerful antioxidants
+          called catechins.
+          <br><br>
+
+          These scavenge your cells for free radicals that could otherwise
+          damage DNA, and contribute to cancer, blocked arteries and blood clots.
+
+      # Ooolong
+      - context: primary
+        text: Oolong Tea
+        image: oolong
+        footer:
+          Adding oolong tea to your diet can improve your overall health by
+          lowering blood pressure and reducing obesity related illnesses.
+          <br><br>
+
+          These can make it easier to reach your weight loss goals. But you'll
+          need to balance a healthy lifestyle to maximize oolong teas benefits.
+
+      # Jasmine
+      - context: success
+        text: Jasmine Tea
+        image: jasmine
+        footer:
+          In aromatherapy, jasmine is believed to provide a tranquillizing
+          effect on the body.
+          <br><br>
+
+          While drinking jasmine tea, the aroma of jasmine can help reduce your
+          heart rate and stress level. Jasmine is Green tea based so contains
+          these factors also
+
+      # Pu-erh
+      - context: info
+        text: Pu-erh Tea
+        image: pu-erh
+        footer:
+          This loose leaf Pu-erh is smooth when drank and it follows with a
+          sweet aftertaste.
+          <br><br>
+
+          It is normally consumed with food because it reduces the fatty oil in
+          food. Hence many believe it has slimming effects as it breaks down
+          these rich food.
+
+      # Red
+      - context: primary
+        text: Red Tea
+        image: red
+        footer:
+          In China, this tea is referred to as congou tea. It has very strong
+          and distinguished fragrance.
+          <br><br>
+
+          Recently a study conducted by the American Heart Association confirmed
+          that people who drink Red Tea have a lower risk of heart attacks and
+          strokes.
+
+  # Treatments
+  treatments:
+
+    # Heading Panel
+    panelText: Swedish, traditional Thai, head and other amazing massage treatments
+    panelSmall: Professional, friendly staff in a tranquil surrounding
+    panelBody:
+      Our treatments are the ultimate in pampering, relaxation and pain
+      remedy. Whether it’s a problem area causing you trouble, or just the
+      stress of the working day, take advantage of a therapeutic deep
+      tissue full body massage or focus on one area to de-stress, unwind
+      and relax. Green Touch can tailor a massage that is right for you.
+      <br><br>
+
+      We start off by offering you tea or water to unwind. Then before
+      your massage a hot towel for your feet and finally the massage of
+      your choice.
+      <br><br>
+
+      Please do always communicate with us or your therapist should the pressure
+      be too much, or you feel any pain.
+      <br><br>
+
+      We highly recommend booking in for at least a 90 minutes massage.
+      <a href="/terms-and-conditions" title="Terms and Conditions">Terms and conditions</a>
+      apply to all our bookings.
+
+    button: Reserve now
+
+    # Treatments
+    treatments:
+
+      # Swedish
+      - title: Anti-Stress Swedish Massage
+        description:
+          Your therapist will use circular movements, kneading and long strokes
+          to help relax your body and mind
+        context: info
+        extraClass: swedish
+        items:
+          - title: "&pound;70 per hour"
+          - title: Aids sleep and boosts immunity
+          - title: Naturally increases circulation
+          - title: Lymphatic drainage rids toxins
+
+      # Thai
+      - title: Green Touch Signature Thai Massage
+        description:
+          Thai Massage is a therapeutic massage using yogic stretches and
+          techniques to reduce aches and pains
+        context: primary
+        extraClass: thai
+        items:
+          - title: "&pound;70per hour"
+          - title: Accupressure increases energy
+          - title: Increases blood circulation
+          - title: Yogic stretches helps flexibility
+
+      # Hot Stone Massage
+      - title: Smoothing Hot Stone Massage
+        description:
+          Totally relaxation, stimulating yet calming, designed to work on
+          muscle tension at the deepest level
+        context: success
+        extraClass: signature
+        items:
+          - title: "&pound;75 per hour"
+          - title: Deep relaxation
+          - title: Ease tension
+          - title: Heat soothes aching muscles
+
+      # Pregnancy Massage
+      - title: Pregnancy Massage
+        description:
+          Prenatal massage for mothers to be. A consultation will take you
+          through your specific needs for each treatment
+        context: info
+        extraClass: pregnancy
+        items:
+          - title: "&pound;80 per hour (pre book only)"
+          - title: From 12+ weeks pregnant
+          - title: Relief from cramps, spasms, and myofascial pain
+          - title: Increase in circulation, which can reduce swelling
+
+      # Cellulite Massage
+      - title: Cellulite massage
+        description :
+          Cellulite is a problem that affects 90% of women and 10% of men, our massage
+          smooths and tones the problem areas
+        context: primary
+        extraClass: cellulite
+        items:
+          - title: "&pound;75 per hour"
+          - title: Combats the cellulite deposits
+          - title: Repeated massages decrease the dimples
+          - title: Lowers stress by increasing body confidence
+
+      # Sports Massage
+      - title: Sports massage
+        description:
+          Strong deep tissues massage geared towards easing aches and pains
+          gained through athletic activities
+        context: success
+        extraClass: sports
+        items:
+          - title: "&pound;70 per hour"
+          - title: Boosts sporting performance
+          - title: Prevents injuries by increasing strength
+          - title: Promotes flexibility in joints and tendons
+
+      # Deep Tissue
+      - title: Deep tissue massage
+        description:
+          Great for those suffering shoulder pain, stiff neck, nervous tension,
+          or back pain. Great after yoga massage.
+        context: info
+        extraClass: tissue
+        items:
+          - title: "&pound;70 per hour"
+          - title: Improves lymphatic ciruclation
+          - title: Breaks up scar tissue
+          - title: Target knots and release muscle tension
+
+      # Reflexology
+      - title: Reflexology massage
+        description:
+          Holistic massage treatment concentrating on the foot and leg with
+          gentle strokes and acupressure
+        context: primary
+        extraClass: reflexology
+        items:
+          - title: "&pound;70 per hour"
+          - title: Stimulates the nerve endings
+          - title: Relieves stress and aids sleep
+          - title: Stimulates lymphatic drainage and physical healing
+
+      # Aromatherapy
+      - title: Aromatherapy massage
+        description:
+          Combines the balancing properties of essential oils with the relaxing
+          benefits of a stress relieving massage
+        context: success
+        extraClass: aromatherapy
+        items:
+          - title: "&pound;75 per hour"
+          - title: Increase metabolism
+          - title: Enhances emotional wellbeing
+          - title: Encourages deeper and more relaxed breathing
+
+      # Back, Neck and Shoulders
+      - title: Back, neck, shoulder
+        description:
+          Focuses on the Back, Neck and Shoulders. Loosens muscles where tension
+          may exist
+        context: info
+        extraClass: backneck
+        items:
+          - title: "&pound;70 per hour"
+          - title: You will feel completely relaxed
+          - title: Relieves back, shoulder and stiff aches
+          - title: Deeply relaxing, reduces stress and muscle tension
+
+      # Head Massage
+      - title: Head massage
+        description:
+          Based on the ayurvedic system of healing, massages vulnerable areas
+          to relieve tension
+        context: primary
+        extraClass: indian
+        items:
+          - title: "&pound;40 per half an hour"
+          - title: Improves circulation
+          - title: Reduces stress, anxiety and depression
+          - title: Relieves tension that can result in migraines
+
+  # Terms And Conditions
+  terms:
+
+    # Heading Panel
+    panelText  : "Terms and Conditions"
+    panelSmall : "Easy to understand terms and conditions"
+    panelBody  : |
+        <h2>Etiquette and medical information</h2>
+
+        <ul>
+            <li>
+                Please arrive 10-15 minutes prior to your appointment so we
+                can record your needs and details, offer you a refreshment
+                and the opportunity to relax.
+            </li>
+            <li>
+                Please note that as a courtesy to all our clients a prompt
+                appointment schedule is adhered to, late appointments may
+                not be honoured. Treatments starting late will still finish
+                at the appointed time, so other guests are not
+                inconvenienced.
+            </li>
+            <li>
+                Please kindly switch off your mobile phones during treatment.
+            </li>
+            <li>
+                During the massage session our customers are required to
+                leave their underwear on.
+            </li>
+            <li>
+                If you have any medical conditions, are pregnant or breast
+                feeding or have allergies, injuries, skin complaints or
+                infections, please discuss with Green Touch Spa and Massage
+                Wimbledon prior to making your booking as this may direct
+                your treatment options.
+            </li>
+            <li>
+                Our massage therapy services are highly professional, we do
+                not offer any erotic or sexual services.
+            </li>
+        </ul>
+
+        <h2>Booking and Cancellation Policy</h2>
+
+        <ul>
+            <li>
+                Credit card details are required to secure an appointment
+                via email, phone or in person. Please have this on hand when
+                making a reservation.
+            </li>
+            <li>
+                Clients who wish to change or cancel an appointment must
+                provide at least 24 hour's notice.
+            </li>
+            <li>
+                Same day cancellations will be charged at 50% of the
+                scheduled service price. This is used to compensate the
+                therapist.
+            </li>
+            <li>
+                Failure to show up for a scheduled appointment, will result
+                in a full charge being applied.
+            </li>
+            <li>
+                Please contact us ASAP if a delay making the appointment is
+                likely to happen. We will always do our best to accommodate
+                late arrivals (within 15 minutes after your appointment) by
+                performing the most complete treatment possible in the time
+                remaining. Arrival 15 minutes after the reservation time
+                will result in full charges (equivalent deductions from gift
+                certificates).
+            </li>
+            <li>
+                Same day booking may be accepted and will be at the
+                discretion of the manager.
+            </li>
+            <li>
+                Last booking is 2 hours before closing time.
+            </li>
+            <li>
+                If you have a gift voucher and do not show up for your
+                treatment or cancel within the 24 hours period before your
+                treatment time, you will forfeit your voucher.
+            </li>
+        </ul>
+
+        <h2>Treatment Prices, Group plan and Service Charges</h2>
+
+        <ul>
+            <li>
+                Note that each package is stand alone and can not be used in
+                conjunction with other packages, i.e. a customer will not be
+                able to use other promotions if they use a group plan token.
+            </li>
+            <li>
+                The buy 5 get 1 treatment free group plan is not limited to an
+                expiry date, and can be shared amonst any family or friends.
+            </li>
+            <li>
+                When using a group plan token, Hot stone, Celluite and Aromatherapy
+                treatments will incur a £5 surcharge.
+            </li>
+            <li>
+                Discretionary gratuity/tips are not added to the final
+                treatment price. Any service charge received goes straight
+                to the therapist who performed your treatment and will be
+                greatly appreciated.
+            </li>
+            <li>
+                Please inform the front of house team should you wish to
+                provide any gratuity.
+            </li>
+        </ul>
+
+        <h2>Gift Certificate Terms and Conditions</h2>
+
+        <ul>
+            <li>
+                Valid for 6 months from date of purchase, unless otherwise stated.
+            </li>
+            <li>
+                Gift Vouchers are non-refundable.
+            </li>
+            <li>
+                Please remember to bring your Gift card to your appointment.
+            </li>
+            <li>
+                Vouchers will be dispatched by post or email - please allow
+                3-to-5 working days (Same day delivery within SW19 area).
+                Please allow 7 days for delivery during peak postal times.
+            </li>
+            <li>
+                No dispatch or delivery during UK Bank Holidays and weekends.
+            </li>
+            <li>
+                Vouchers can be bought in multiples as gifts or for yourself.
+            </li>
+            <li>
+                The vouchers can be used any day but is subject to availability.
+            </li>
+        </ul>
+
+        <h2>Complaints/Comments</h2>
+
+        <ul>
+            <li>
+                Any complaint or comment regarding your treatments should be
+                made in the first instance to the receptionist before you
+                leave Green Touch Thai Massage Wimbledon so that it can be
+                resolved at the time.
+            </li>
+            <li>
+                Problems which cannot be resolved should be notified in
+                writing to Green Touch Thai Massage Wimbledon Manager at
+                info@greentouchpi.com or by post: 1B Kings Road, Wimbledon,
+                SW19 8PL, London, UK.
+            </li>
+            <li>
+                We reserve the right, at our discretion, to update and/or
+                revise these terms. Please check periodically for changes.
+            </li>
+        </ul>
+
+  # Copyright
+  copyright:
+    rights: 'All rights reserved.'
+    brand: 'Green Touch PI Ltd'
+
+  # Footer
+  footer:
+
+    # Column 1
+    - title: "About"
+      icon: "fa-info"
+      description: |
+        Green Touch Spa and Massage offers professional massage services
+        within a stunning oriental surrounding, delivered by fully qualified
+        staff.
+        <br><br>
+
+        Economically priced with group plans available; buy 5 treatments get 1
+        free, proving that luxury doesn't need to cost the earth!
+        <br><br>
+
+        We welcome you to take a tour of our massage rooms and see for
+        yourself why so many of our clients return time and again.
+
+    # Column 2
+    - title       : "What we do"
+      icon        : "fa-cogs"
+      description : |
+        Green Touch specialises in Swedish massage, traditional Thai
+        massage, sports massage, reflexology and more in the Wimbledon,
+        London area. All treatments are conducted by highly trained Thai
+        nationals.
+        <br><br>
+
+        Our treatments are carefully choreographed to maximise the health
+        and well being of our clients in the time allotted.
+        <br><br>
+
+        We can tailor each treatment to your individual requirements.
+
+    # Column 3
+    - title: "Social"
+      icon: "fa-facebook"
+      description: |
+        <a href="https://www.facebook.com/greentouch.pi" target="_blank">Follow us on Facebook</a>
+        for exclusive promotions and deals.
+        <br><br>
+
+        We offer group bookings for birthdays, hen parties, girls day and
+        night out, Mother's Day, or general pampering experience.
+        <br><br>
+
+        Let us know the occasion and we can plan the details with you.
+
+    # Column 4
+    - title: "Contact"
+      icon: "fa-phone"
+      description: |
+        For bookings, questions or general feedback
+        <a href="/contactus" title="contact us">please get in touch</a>
+        <br><br>
+
+        We are directly across from Al Forno Italian restaurant in Wimbledon.
+        <br><br>
+
+        <i class="fa fa-map-marker fa-fw"></i>
+        1B Kings Road, Wimbledon, SW19 8PL, London -
+        <a href="/contactus" title="Google map">Map</a>
+        <br><br>
+
+        <i class="fa fa-phone fa-fw"></i>
+        <a href="tel:+442085403888" title="Phone us">+44 208 540 3888</a>
+        <br><br>
+
+        <i class="fa fa-envelope fa-fw"></i>
+        <a href="mailto:info@greentouchpi.com" title="Email Green Touch">info@greentouchpi.com</a>
+        <br><br>
+
+        <a href="/terms-and-conditions" title="Terms and Conditions">Terms and conditions</a>

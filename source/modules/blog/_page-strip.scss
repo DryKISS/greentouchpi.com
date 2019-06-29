@@ -1,0 +1,52 @@
+// Page strip
+//
+// @author Ian Warner <ian.warner@drykiss.com>
+// @category blog
+//----------------------------------------------------------------------------//
+
+// Module
+//----------------------------------------------------------------------------//
+$module: 'page-strip';
+
+// Page strip
+//----------------------------------------------------------------------------//
+.#{$module} {
+
+  background-color: #00ccbc;
+  background-image: url('https://cdn1.deliveroo.co.uk/assets/images/macaroon/teal-food-bg-11910af957abced304257a46c3f89b94.svg');
+  background-position: center;
+  background-repeat: repeat;
+  height: auto;
+  margin-bottom: 20px;
+  padding: 0;
+  position: relative;
+  z-index: 1;
+
+  // Heading
+  //--------------------------------------------------------------------------//
+  &__heading {
+    color: #fff;
+    margin: 0 auto;
+    padding: 40px 15px;
+
+    small {
+      display: block;
+    }
+  }
+
+  // Media queries - Mobile
+  //--------------------------------------------------------------------------//
+  @media only screen and (min-width: 320px) and (max-width: 767px)
+  {
+    margin-bottom: 0;
+    margin-left: -15px;
+    margin-right: -15px;
+
+    // Heading
+    //------------------------------------------------------------------------//
+    &__heading {
+      font-size: 30px;
+      line-height: 33px;
+    }
+  }
+}

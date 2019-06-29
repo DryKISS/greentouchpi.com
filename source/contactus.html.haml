@@ -1,0 +1,84 @@
+---
+stub: contactus
+---
+
+-# Panel
+= codeBlender 'panel', 'molecule',
+  { body: :'contact.panelBody', heading: { text: :'contact.panelText' } }
+
+
+-# Google map embed
+- content_for :map do
+  .embed-responsive.embed-responsive-16by9
+    %iframe{ allowfullscreen: '',
+              class: 'embed-responsive-item',
+              frameborder: '0',
+              src: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2488.078618893059!2d-0.20374218378438316!3d51.41998242491123!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487608ba87a6b691%3A0xac473b16f5a952a5!2sGreen+Touch+Spa+and+Massage+Wimbledon!5e0!3m2!1sen!2suk!4v1516386573189',
+              style: 'border:0' }
+
+-# Heading panel
+= codeBlender 'panel', 'molecule',
+  { body: yield_content(:map), heading: { tag: 'h2', text: :'contact.mapText' } }
+
+-# Address
+- content_for :addressBody do
+
+  -# Address
+  %address
+
+    %p
+      -# Address
+      %i.fa.fa-map-marker.fa-fw
+      %strong
+        Address
+      %br
+      = string :"contact.address1"
+      %br
+      = string :"contact.address2"
+      %br
+      = string :"contact.address3"
+
+    %p
+      %i.fa.fa-external-link.fa-fw
+      %a{ href: 'https://goo.gl/maps/UBPbNBz5qQo', target: '_blank' }
+        View larger Map
+
+    -# Call
+    %i.fa.fa-phone.fa-fw
+    = callLink '+442085403888'
+    %br
+
+    -# Email
+    %i.fa.fa-envelope.fa-fw
+    = mail_to 'info@greentouchpi.com'
+
+-# Address panel
+= codeBlender 'panel', 'molecule',
+  { body: yield_content(:addressBody), heading: { tag: 'h2', text: :'contact.addressTitle' } }
+
+-# Opening times
+- content_for :openingBody do
+
+  - t(:'contact.open').each do |value|
+    %i.fa.fa-clock-o.fa-fw
+    = string value
+    %br
+
+-# Opening times panel
+= codeBlender 'panel', 'molecule',
+  { body: yield_content(:openingBody), heading: { tag: 'h2', text: :'contact.openText' } }
+
+-# Social
+- content_for :socialBody do
+
+  -# Facebook
+  %a{ href: data.facebook.page.url, title: 'Facebook page', target: '_blank' }
+    %span.fa.fa-facebook-square
+
+  -# Google
+  %a{ href: data.google.page.url, title: 'Google page', target: '_blank' }
+    %span.fa.fa-google-plus-square
+
+-# Social Panel
+= codeBlender 'panel', 'molecule',
+  { body: yield_content(:socialBody), heading: { tag: 'h2', text: :'contact.socialText' } }

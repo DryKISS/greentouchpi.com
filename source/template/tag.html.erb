@@ -1,0 +1,51 @@
+---
+pageable: true
+template: true
+---
+
+<%#
+Tag template
+
+@todo Add Schema.org info for the Tag elements
+%>
+
+<%
+content_for :title, "#{t(:'meta.tag.title')}: #{tagname}"
+content_for :description, "#{t(:'meta.tag.description')}: #{tagname}"
+prevPage = prev_page || false
+nextPage = next_page || false
+%>
+
+<div class="blog-category">
+
+  <%# Page strip %>
+  <%= partial 'modules/blog/page-strip.erb', locals: {text: "#{t(:'tag.title')}: #{tagname.titleize}"} %>
+
+  <div class="blog-tag__list">
+
+    <div class="row">
+
+      <%# Article list %>
+      <% page_articles.each do |article| %>
+        <div class="col-xs-12 col-sm-6">
+          <%= partial 'modules/blog/post-card.erb', locals: {article: article.data, url: article.url} %>
+        </div>
+      <% end %>
+
+    </div>
+
+  </div>
+
+  <%# Pagination %>
+  <div class="blog-tag__pagination">
+
+    <%= partial 'partials/molecule/pagination.erb', locals: {
+      nextPage: nextPage,
+      prevPage: prevPage,
+      pageNo: page_number,
+      pages: num_pages
+    } %>
+
+  </div>
+
+</div>

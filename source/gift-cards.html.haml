@@ -1,0 +1,40 @@
+---
+stub: gift
+---
+
+-# Heading Panel
+= codeBlender 'panel', 'molecule',
+  { body: :'gift.panelBody', heading: { text: :'gift.panelText' } }
+
+-# Cart
+- content_for :table do
+  %table.table
+
+    %thead
+      %tr
+        %th Name
+        %th Value
+        %th Action
+
+    %tbody
+      %tr
+        %td Single Massage
+        %td &pound;70
+        %td
+          %form{ action: '/your-server-side-code', method: 'post' }
+            <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+            data-key="pk_test_hIhsHj4nQWp0iyVcxMWQbEwI"
+            data-amount="7000"
+            data-name="Greentouch (PI) Limited"
+            data-description="&pound;70 Gift Card"
+            data-image="https://greentouchpi.com/favicon_template.png"
+            data-locale="auto"
+            data-zip-code="true"
+            data-billing-address="true"
+            data-shipping-address="true"
+            data-currency="gbp">
+            </script>
+
+-# Cart
+= codeBlender 'panel', 'molecule',
+{ body: yield_content(:table), heading: { text: :'gift.cartText' } }

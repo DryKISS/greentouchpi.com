@@ -1,0 +1,51 @@
+<%#
+Sidebar
+Showcases the Find Food, Social, Recent, Tags and Archive
+The News room replaces the Find food with a search
+
+@author Ian Warner <ian.warner@drykiss.com>
+@category blog
+%>
+
+<aside class="sidebar">
+
+  <%# Search %>
+  <%= partial 'modules/search/search.erb' %>
+
+  <%# Not Newsroom %>
+  <% if ENV['site'] != 'news.deliveroo.co.uk' %>
+
+    <%# Find food %>
+    <%= partial 'modules/blog/find-food.erb' %>
+
+    <%# Promo - Inspiration %>
+    <% link_to('/inspiration/index.html', { class: 'sidebar__promotion' }) do %>
+
+      <%# Image - Inspiration %>
+      <%= partial 'partials/atom/image.erb', locals: {
+        extraClass: 'img-responsive',
+        src: "inspiration/inspiration-#{locale}.gif?v=1",
+        title: 'Deliveroo Inspiration'
+      } %>
+
+    <% end %>
+
+  <% end %>
+
+  <%# Social %>
+  <%= partial 'modules/blog/social.erb' %>
+
+  <div class="sidebar__elements">
+
+    <%# Recent articles %>
+    <%= partial 'partials/molecule/recent.erb', locals: { count: 5 } %>
+
+    <%# Tag cloud %>
+    <%= partial 'partials/molecule/tag-cloud.erb', locals: { threshold: 1 } %>
+
+    <%# Blog archive %>
+    <%= partial 'partials/molecule/archive.erb' %>
+
+  </div>
+
+</aside>

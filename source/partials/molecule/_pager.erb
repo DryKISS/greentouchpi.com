@@ -1,0 +1,39 @@
+<%#
+Pager
+
+@author Ian Warner <ian.warner@drykiss.com>
+@category molecule
+%>
+
+<div class="row">
+
+  <%# Pager %>
+  <ul class="pager">
+
+    <%# Older %>
+    <li class="previous col-xs-12 col-sm-6">
+      <% if prevPage %>
+
+        <% link_to(prevPage.url, {rel: 'previous'}) do %>
+          &larr; Older :
+          <%= prevPage.title %>
+        <% end %>
+
+      <% end %>
+    </li>
+
+    <%# Newer %>
+    <li class="next col-xs-12 col-sm-6">
+      <% if nextPage %>
+
+        <% link_to(nextPage.url, {rel: 'next'}) do %>
+          <%= nextPage.title %>
+          : Newer &rarr;
+        <% end %>
+
+      <% end %>
+    </li>
+
+  </ul>
+
+</div>

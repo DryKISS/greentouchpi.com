@@ -1,0 +1,53 @@
+<%#
+Blog recent articles
+
+@author Ian Warner <ian.warner@drykiss.com>
+@category molecule
+
+@todo This is not picking up the localised blog correctly
+%>
+
+<%# Variable %>
+<%
+root = extensions[:i18n].options[:mount_at_root]
+blog = 'blog'
+count = locals[:count] || 10
+select = selectOption(blog(blog).articles.select {
+  |a| a.data.category != 'terms' and a.data.homepage != 'false' }, count)
+%>
+
+<section class="blog-recent">
+
+  <%# Heading - Recent - H4 %>
+  <%= partial 'partials/molecule/heading.erb', locals: {
+    extraClass: 'blog-recent__heading',
+    tag: 'h4',
+    text: :'recent.title'} %>
+
+  <dl class="blog-recent__list dl-horizontal">
+
+    <%# Loop through recent articles %>
+    <% select.each do |article| %>
+
+      <dt class="blog-recent__dt">
+
+        <%# Label %>
+        <%= partial 'partials/atom/label.erb', locals: {
+          extraClass: 'blog-recent__label',
+          context: 'info',
+          content: article.date.strftime('%b %e')} %>
+
+      </dt>
+
+      <dd class="blog-recent__dd">
+
+        <%# Link %>
+        <%= link_to(string(article.title), article, {class: 'blog-recent__link heading--truncate'}) %>
+
+      </dd>
+
+    <% end %>
+
+  </dl>
+
+</section>

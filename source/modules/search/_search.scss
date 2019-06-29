@@ -1,0 +1,115 @@
+// Search
+//
+// @usage
+// @import '~local/_search.scss';
+//
+// @author Ian Warner <ian.warner@drykiss.com>
+// @category search
+//----------------------------------------------------------------------------//
+
+// Variable
+//----------------------------------------------------------------------------//
+@import '~css/variable';
+
+// Module
+//----------------------------------------------------------------------------//
+$module: 'search';
+
+// Search
+//----------------------------------------------------------------------------//
+.#{$module} {
+
+  // Form
+  //--------------------------------------------------------------------------//
+  &__form {
+    background-color: #bdbaba;
+    color: #fff;
+    line-height: 22px;
+    margin: 0 -10px;
+    padding: 15px;
+
+    // Button
+    //------------------------------------------------------------------------//
+    .#{$module}__button {
+      background-color: $brand-primary;
+      border-color: $brand-primary;
+      color: #fff;
+    }
+  }
+
+  // No Background
+  //--------------------------------------------------------------------------//
+  &--no-background &__form {
+    background-color: inherit;
+  }
+
+  // Input group
+  //--------------------------------------------------------------------------//
+  .input-group {
+    padding: 5px 0;
+  }
+
+  // Form control
+  //--------------------------------------------------------------------------//
+  .form-control {
+    font-size: 16px;
+  }
+
+  // Button
+  //--------------------------------------------------------------------------//
+  .input-group-lg > .input-group-btn > .btn {
+    font-size: 16px;
+  }
+
+  // Form group
+  //--------------------------------------------------------------------------//
+  .form-group {
+    margin-bottom: 0;
+  }
+
+  // Media queries - Mobile
+  //--------------------------------------------------------------------------//
+  @media only screen and (min-width: 320px) and (max-width: 992px) {
+
+    // Label
+    //------------------------------------------------------------------------//
+    &__form {
+      left: 0;
+      padding: 15px 25px;
+      position: fixed;
+      top: 60px;
+      z-index: 1000;
+    }
+  }
+}
+
+// Module
+//----------------------------------------------------------------------------//
+$module: 'search-results';
+
+// Search results
+//----------------------------------------------------------------------------//
+.#{$module} {
+
+  // Heading
+  //--------------------------------------------------------------------------//
+  .post-card__heading {
+    display: block;
+    max-height: 11rem;
+    overflow: hidden;
+    text-overflow: clip;
+    word-wrap: break-word;
+  }
+
+  // Search
+  //--------------------------------------------------------------------------//
+  a.list-group-item {
+    color: $brand-primary;
+  }
+
+  // Media queries - Mobile
+  //--------------------------------------------------------------------------//
+  @media only screen and (min-width: 320px) and (max-width: 992px) {
+    margin-top: 171px;
+  }
+}

@@ -1,0 +1,75 @@
+<%#
+Social
+
+@author Ian Warner <ian.warner@drykiss.com>
+@category blog
+%>
+
+<%# Social %>
+<section class="social">
+
+  <%# Facebook %>
+  <% if t(:'social.facebook') === 'true'  %>
+
+    <%# Heading %>
+    <%= partial 'partials/molecule/heading.erb', locals: {
+      extraClass: 'social__heading',
+      tag: 'h4',
+      text: 'Facebook' }
+    %>
+
+    <div class="social__facebook">
+      <%= partial 'partials/social/facebook/page-plugin.erb', locals: {
+        href: :'facebook.page.url',
+        title: 'Deliveroo' }
+      %>
+    </div>
+
+  <% end %>
+
+  <%# Instagram - Provided by LighWidget %>
+  <% if t(:'social.instagram.active') === 'true'  %>
+
+    <%# Heading %>
+    <%= partial 'partials/molecule/heading.erb', locals: {
+      extraClass: 'social__heading',
+      tag: 'h4',
+      text: 'Instagram'}
+    %>
+
+    <div class="social__instagram">
+
+      <iframe
+        src="http://lightwidget.com/widgets/<%= t(:'social.instagram.code') %>.html"
+        scrolling="no"
+        allowtransparency="true"
+        class="lightwidget-widget"
+        style="width: 100%; border: 0; overflow: hidden;"
+      >
+      </iframe>
+
+    </div>
+
+  <% end %>
+
+  <%# Twitter %>
+  <% if t(:'social.twitter') === 'true'  %>
+
+    <%# Heading %>
+    <%= partial 'partials/molecule/heading.erb', locals: {
+      extraClass: 'social__heading',
+      tag: 'h4',
+      text: 'Twitter' }
+    %>
+
+    <div class="social__twitter">
+      <%= partial 'partials/social/twitter/timeline.erb', locals: {
+        href: :'twitter.account',
+        height: '365',
+        limit: '1' }
+      %>
+    </div>
+
+  <% end %>
+
+</section>

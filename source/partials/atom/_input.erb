@@ -1,0 +1,140 @@
+<%#
+Input
+
+@author Ian Warner <ian.warner@drykiss.com>
+@category atom
+
+@todo Rwfactor this - split out the sections into other components
+%>
+
+<%# Variables %>
+<%
+input = locals[:input]
+label = locals[:label]
+%>
+
+<%# Capture input %>
+<% inputCapture = capture do %>
+
+  <%# Extraclass %>
+  <% extraClass = input[:extraClass] ? "form-control #{input[:extraClass]}" : 'form-control' %>
+
+  <%# Attrbutes %>
+  <% attribute = {
+    autocapitalize: input[:autocapitalize] || false,
+    autocomplete: input[:autocomplete] || false,
+    autocorrect: input[:autocorrect] || false,
+    autofocus: input[:autofocus] ? 'autofocus' : false,
+    accept: input[:accept] || false,
+    class: extraClass,
+    clear: input[:clear] ? {btn: true} : false,
+    data: input[:data] || false,
+    disabled: input[:disabled] ? 'disabled' : false,
+    id: input[:name] || false,
+    name: input[:name] || false,
+    ng: input[:ng] || false,
+    pattern: input[:pattern] || false,
+    placeholder: input[:placeholder] ? string(input[:placeholder]) : false,
+    required: input[:required] ? 'required' : false,
+    src: input[:src] || false,
+    title: input[:title] || false,
+    type: input[:type] || 'text',
+    typeahead: input[:typeahead] || false,
+    uib: input[:uib] || false,
+    value: input[:value] || false } %>
+
+  <%# Push arbitrary attributes onto the element %>
+  <% if (input[:attribute]) %>
+    <% attribute.merge!(input[:attribute]) %>
+  <% end %>
+
+  <%# Tag %>
+  <%= text_field_tag(input[:name], attribute) %>
+
+<% end %>
+
+<%# Capture input group %>
+<% inputGroupCapture = capture do %>
+
+  <%# Input Group - If icon or button required %>
+  <% if locals[:icon] || locals[:button] %>
+
+    <div class="<%= input[:inputGroupClass] ? input[:inputGroupClass] : 'input-group' %>">
+
+      <%# Icon prepend %>
+      <% if locals[:icon] and locals[:icon][:prepend] %>
+        <%= partial 'partials/atom/icon.erb', locals: {icon: "#{locals[:icon][:prepend][:icon]} input-group-addon", ng: {hide: 'loading'}} %>
+      <% end %>
+
+      <%# Button prepend %>
+      <% if locals[:button] and locals[:button][:prepend] %>
+        <span class="input-group-btn">
+          <%= partial 'partials/atom/button.erb', locals: locals[:button][:prepend] %>
+        </span>
+      <% end %>
+
+      <%# Input %>
+      <%= inputCapture %>
+
+      <%# Icon append %>
+      <% if locals[:icon] and locals[:icon][:append] %>
+        <%= partial 'partials/atom/icon.erb', locals: {icon: "#{locals[:icon][:append][:icon]} input-group-addon"} %>
+      <% end %>
+
+      <%# Button prepend %>
+      <% if locals[:button] and locals[:button][:append] %>
+        <span class="input-group-btn">
+          <%= partial 'partials/atom/button.erb', locals: locals[:button][:append] %>
+        </span>
+      <% end %>
+
+    </div>
+
+  <%# Feedback %>
+  <% elsif locals[:feedback] %>
+    <%= inputCapture %>
+    <%= partial 'partials/atom/icon.erb', locals: {icon: 'form-control-feedback ng-hide'} %>
+
+  <%# Input %>
+  <% else %>
+    <%= inputCapture %>
+  <% end %>
+
+<% end %>
+
+<%# Main capture %>
+<% completeCapture = capture do %>
+
+  <%= inputGroupCapture %>
+
+  <%# Help block %>
+  <% if locals[:help] %>
+    <span class="help-block">
+      <%= locals[:help][:content] %>
+    </span>
+  <% end %>
+
+<% end %>
+
+<%# Show error %>
+<% showError = !falsey(input[:showError]) ? 'show="{errors: \'{showSuccess: true}\'}"' : nil %>
+
+<%# Form group %>
+<div class="form-group" <%= showError %>>
+
+  <%# Label %>
+  <label class="control-label <%= label[:extraClass] || nil %>" for="<%= input[:name] %>">
+    <%= string(label[:title]) %>
+  </label>
+
+  <%# Columns %>
+  <% if locals[:column] %>
+    <div class="<%= locals[:column] %>">
+      <%= completeCapture %>
+    </div>
+
+  <% else %>
+    <%= completeCapture %>
+  <% end %>
+
+</div>
