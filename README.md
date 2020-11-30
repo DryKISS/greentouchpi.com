@@ -1,3 +1,3 @@
-# Project: Homyze.com
+# Project: GreenTouchPi.com
 
-Landing pages for Homyze
+Landing pages for Green Touch

@@ -1,5 +1,5 @@
 {
-  "name": "homyze.com",
+  "name": "greentouchpi.com",
   "private": true,
   "license": "ISC",
   "version": "1.0.0",
@@ -15,7 +15,7 @@
     "export": "next export",
     "package": "yarn build && yarn export",
     "postexport": "node ./scripts/postExport.js",
-    "production": "push-dir --dir=out --remote=git@github.com:DryKISS/homyze.com.git --branch=gh-pages",
+    "production": "push-dir --dir=out --remote=git@github.com:DryKISS/greentouchpi.com.git --branch=gh-pages",
     "clean-cache": "rimraf -rf ./node_modules/.cache",
     "serve": "serve out",
     "check": "yarn upgrade-interactive",
