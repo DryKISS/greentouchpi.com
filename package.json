@@ -1,35 +1,103 @@
 {
-  "author": "Ian Warner <ian.warner@drykiss.com>",
-  "license": "MIT",
-  "name": "greentouchpi",
-  "version": "1.0.0",
-  "description": "Greentouch PI Massage and Spa",
-  "main": "source/assets/javascripts/body.js",
+  "name": "homyze.com",
   "private": true,
-  "homepage": "https://greentouchpi.com",
+  "license": "ISC",
+  "version": "1.0.0",
   "scripts": {
-    "start": "NO_CONTRACTS=true bundle exec middleman server",
-    "build": "NO_CONTRACTS=true bundle exec middleman build --clean",
-    "deploy": "NO_CONTRACTS=true bundle exec middleman deploy"
+    "start": "next",
+    "start:prod": "next start",
+    "standard": "standard --verbose | snazzy",
+    "standard-fix": "standard --fix --verbose | snazzy",
+    "prettier": "prettier-standard --staged --lint",
+    "stylelint": "stylelint",
+    "lint": "yarn run prettier && yarn run stylelint",
+    "build": "next build",
+    "export": "next export",
+    "package": "yarn build && yarn export",
+    "postexport": "node ./scripts/postExport.js",
+    "production": "push-dir --dir=out --remote=git@github.com:DryKISS/homyze.com.git --branch=gh-pages",
+    "clean-cache": "rimraf -rf ./node_modules/.cache",
+    "serve": "serve out",
+    "check": "yarn upgrade-interactive",
+    "analyze": "ANALYZE=true next build",
+    "analyze:server": "BUNDLE_ANALYZE=server next build",
+    "analyze:browser": "BUNDLE_ANALYZE=browser next build"
+  },
+  "engines": {
+    "node": "^12"
+  },
+  "eslint": {
+    "settings": {
+      "react": {
+        "version": "detect"
+      }
+    }
+  },
+  "lint-staged": {
+    "**/*.js": [
+      "yarn lint"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "prettier": {
+    "printWidth": 100
+  },
+  "standard": {
+    "globals": [
+      "afterEach",
+      "before",
+      "beforeEach",
+      "cy",
+      "Cypress",
+      "describe",
+      "expect",
+      "it",
+      "localStorage"
+    ],
+    "ignore": [
+      "*.bundle*.js",
+      "cypress/support/**"
+    ],
+    "parser": "babel-eslint"
+  },
+  "stylelint": {
+    "processors": [
+      "stylelint-processor-styled-components"
+    ],
+    "extends": [
+      "stylelint-config-standard",
+      "stylelint-config-prettier",
+      "stylelint-config-styled-components"
+    ]
   },
   "dependencies": {
-    "angular": "",
-    "bootstrap-sass": "",
-    "font-awesome": "",
-    "jquery": ""
+    "@drykiss/industry-ui": "1.7.0",
+    "deepmerge": "^4.2.2",
+    "next": "^9.5.5",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0",
+    "styled-components": "^5.2.0"
   },
   "devDependencies": {
-    "clean-webpack-plugin": "",
-    "coffee-loader": "",
-    "coffeescript": "",
-    "css-loader": "",
-    "extract-text-webpack-plugin": "",
-    "file-loader": "",
-    "node-sass": "",
-    "resolve-url-loader": "",
-    "sass-loader": "",
-    "style-loader": "",
-    "url-loader": "",
-    "webpack": ""
+    "babel-eslint": "^10.1.0",
+    "babel-plugin-styled-components": "^1.11.1",
+    "fs-extra": "^9.0.1",
+    "husky": "^4.3.0",
+    "lint-staged": "^10.4.0",
+    "prettier-standard": "^16.4.1",
+    "push-dir": "^0.4.1",
+    "serve": "^11.3.2",
+    "snazzy": "^8.0.0",
+    "standard": "^14.3.4",
+    "start-server-and-test": "^1.11.5",
+    "stylelint": "^13.7.2",
+    "stylelint-config-prettier": "^8.0.2",
+    "stylelint-config-standard": "^20.0.0",
+    "stylelint-config-styled-components": "^0.1.1",
+    "stylelint-processor-styled-components": "^1.10.0"
   }
 }
