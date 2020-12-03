@@ -8,6 +8,7 @@ const COLOUR = {
 
   white: 'rgb(255, 255, 255)',
   black: 'rgb(0, 0, 0)',
+  gray: '#333333',
 
   primary: '#99c848',
   secondary: 'rgb(6, 121, 216)',
@@ -17,6 +18,16 @@ const COLOUR = {
   danger: 'rgb(232, 9, 94)',
 
   help: 'rgb(255, 222, 3)'
+}
+
+const COPYRIGHT = {
+  background: COLOUR.gray,
+  colour: COLOUR.white
+}
+
+const FOOTER = {
+  background: 'url("/assets/images/footer/background.png")',
+  color: COLOUR.black
 }
 
 const NAVBAR = {
@@ -65,6 +76,8 @@ const TYPOGRAPHY = {
 
 export const Theme = {
   COLOUR,
+  COPYRIGHT,
+  FOOTER,
   NAVBAR,
   TYPOGRAPHY
 }
