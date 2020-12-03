@@ -15,7 +15,7 @@ export const Blog = {
 }
 
 export const Brand = {
-  logo: '/static/logo/drykiss.svg',
+  logo: 'assets/images/greentouch-logo.png',
   name: 'Green Touch'
 }
 

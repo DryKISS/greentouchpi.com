@@ -5,14 +5,32 @@
 // React
 import { node } from 'prop-types'
 
+// Stylec Components
+import styled from 'styled-components'
+
+// UI
+import { Column, Container, Row, MEDIA_QUERY } from '@drykiss/industry-ui'
+
 // Components
-import { LayoutFooter, LayoutHeader } from 'components'
+import { LayoutFooter, LayoutHeader, LayoutSidebar } from 'components'
 
 const Layout = ({ children }) => {
   return (
     <>
       <LayoutHeader />
-      <main>{children}</main>
+      <main>
+        <Container>
+          <Row>
+            <Column xs={12} md={9}>
+              {children}
+            </Column>
+
+            <SidebarColumn xs={12} md={3}>
+              <LayoutSidebar />
+            </SidebarColumn>
+          </Row>
+        </Container>
+      </main>
       <LayoutFooter />
     </>
   )
@@ -21,5 +39,11 @@ const Layout = ({ children }) => {
 Layout.propTypes = {
   children: node.isRequired
 }
+
+const SidebarColumn = styled(Column)`
+  ${MEDIA_QUERY.desktop`
+    order: -1;
+  `}
+`
 
 export default Layout
