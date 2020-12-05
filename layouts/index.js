@@ -9,7 +9,7 @@ import { node } from 'prop-types'
 import styled from 'styled-components'
 
 // UI
-import { Column, Container, Row, MEDIA_QUERY } from '@drykiss/industry-ui'
+import { Column, Container, MEDIA_QUERY, Row, Space } from '@drykiss/industry-ui'
 
 // Components
 import { LayoutFooter, LayoutHeader, LayoutSidebar } from 'components'
@@ -30,6 +30,8 @@ const Layout = ({ children }) => {
             </SidebarColumn>
           </Row>
         </Container>
+
+        <Space marginBottom='lg' />
       </main>
       <LayoutFooter />
     </>
