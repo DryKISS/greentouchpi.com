@@ -1,6 +1,11 @@
 // Font awesome
-import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons'
+import {
+  faBars,
+  faChevronLeft,
+  faChevronRight,
+  faCopyright
+} from '@fortawesome/free-solid-svg-icons'
 
 import { library } from '@fortawesome/fontawesome-svg-core'
 
-library.add(faChevronLeft, faChevronRight)
+library.add(faBars, faChevronLeft, faChevronRight, faCopyright)
