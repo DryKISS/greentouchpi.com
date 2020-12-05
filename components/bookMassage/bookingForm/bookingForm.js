@@ -47,7 +47,7 @@ export const BookingForm = ({ ...args }) => {
     }
 
     axios
-      .post('https://formspree.io/f/xgeplqke', formData)
+      .post(process.env.NEXT_PUBLIC_BOOKING_FORM_SPREE_URL, formData)
       .then(() => {
         reset()
         setMessage({
