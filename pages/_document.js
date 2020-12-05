@@ -10,8 +10,8 @@ export default class MyDocument extends Document {
     return (
       <Html className='no-js' lang='en' dir='ltr' prefix='og: http://ogp.me/ns#'>
         <Head>
-          <meta charset='utf-8' />
-          <meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible' />
+          <meta charSet='utf-8' />
+          <meta content='IE=edge,chrome=1' httpEquiv='X-UA-Compatible' />
           <meta content='DryKISS' name='author' />
           <meta content='index,follow,archive' name='robots' />
 
@@ -37,11 +37,11 @@ export default class MyDocument extends Document {
         </Head>
 
         <body
-          class='index'
+          className='index'
           data-locale='en'
           data-localeFacebook='en_GB'
-          itemscope
-          itemtype='https://schema.org/WebPage'
+          itemScope
+          itemType='https://schema.org/WebPage'
         >
           <Main />
           <NextScript />
