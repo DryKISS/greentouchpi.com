@@ -12,6 +12,9 @@ import { Config, Theme } from 'config'
 
 import 'config/icons'
 
+// Styles
+import 'react-datepicker/dist/react-datepicker.css'
+
 const PageApp = props => {
   return <MyApp config={Config} Layout={Layout} pageProgressBar theme={Theme} {...props} />
 }
