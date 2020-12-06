@@ -33,11 +33,10 @@ export default class MyDocument extends Document {
             name='viewport'
           />
           <meta content='yes' name='mobile-web-app-capable' />
-          <link href='assets/stylesheets/style.min.css' rel='stylesheet' media='all' />
         </Head>
 
         <body
-          className='index'
+          style={{ backgroundColor: '#333' }}
           data-locale='en'
           data-localeFacebook='en_GB'
           itemScope

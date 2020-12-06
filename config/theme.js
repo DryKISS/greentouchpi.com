@@ -52,7 +52,7 @@ const NAVBAR = {
   positionCollapse: 'fixed',
 
   // Link
-  paddingLink: '1rem',
+  paddingLink: '0.5rem',
   colourDefault: COLOUR.black,
   colourHover: COLOUR.primary,
   colourDefaultDesktop: COLOUR.black,
