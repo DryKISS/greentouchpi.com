@@ -16,36 +16,35 @@ const PageSpecialOffer = () => {
     <>
       <Head>
         <title>
-          Swedish, traditional Thai, head and other amazing massage treatments - Green Touch Spa and
-          Massage
+          50% off massage treatments and other promotional sales at Green Touch Wimbledon
         </title>
         <meta
-          content='Amazing Thai and Swedish Massage Treatments. New hot stone and head massage available at Green Touch Spa and Massage Wimbledon'
+          content='Promotion specials on Swedish and Thai massage at Green Touch Spa and Massage in Wimbledon, London'
           name='description'
         />
         <meta
-          content='Amazing Thai and Swedish Massage Treatments. New hot stone and head massage available at Green Touch Spa and Massage Wimbledon'
+          content='Promotion specials on Swedish and Thai massage at Green Touch Spa and Massage in Wimbledon, London'
           name='keywords'
         />
-        <meta href={`${Canonical}/massages`} rel='canonical' />
+        <meta href={`${Canonical}/specialoffer`} rel='canonical' />
         <meta
-          content='Swedish, traditional Thai, head and other amazing massage treatments - Green Touch Spa and Massage'
+          content='50% off massage treatments and other promotional sales at Green Touch Wimbledon'
           name='dcterms.title'
         />
         <meta
-          content='Amazing Thai and Swedish Massage Treatments. New hot stone and head massage available at Green Touch Spa and Massage Wimbledon'
+          content='Promotion specials on Swedish and Thai massage at Green Touch Spa and Massage in Wimbledon, London'
           name='dcterms.description'
         />
         <meta
-          content='Swedish, traditional Thai, head and other amazing massage treatments - Green Touch Spa and Massage'
+          content='50% off massage treatments and other promotional sales at Green Touch Wimbledon'
           property='og:title'
         />
         <meta
-          content='Amazing Thai and Swedish Massage Treatments. New hot stone and head massage available at Green Touch Spa and Massage Wimbledon'
+          content='Promotion specials on Swedish and Thai massage at Green Touch Spa and Massage in Wimbledon, London'
           name='description'
           property='og:description'
         />
-        <meta content={`${Canonical}/massages`} property='og:url' />
+        <meta content={`${Canonical}/specialoffer`} property='og:url' />
       </Head>
       <SpecialOffer />
     </>

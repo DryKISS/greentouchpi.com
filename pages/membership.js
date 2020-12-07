@@ -15,16 +15,13 @@ const PageMembership = () => {
   return (
     <>
       <Head>
-        <title>
-          Swedish, traditional Thai, head and other amazing massage treatments - Green Touch Spa and
-          Massage
-        </title>
+        <title>Green Touch Group Plans. Buy 5 Massage Treatments Get 1 FREE</title>
         <meta
           content='Amazing Group plan Buy 5 treatments get 1 FREE. Swedish massage and traditional Thai massage treatment at Wimbledon, London branch.'
           name='description'
         />
         <meta
-          content='content="Amazing Group plan Buy 5 treatments get 1 FREE. Swedish massage and traditional Thai massage treatment at Wimbledon, London branch."'
+          content='Amazing Group plan Buy 5 treatments get 1 FREE. Swedish massage and traditional Thai massage treatment at Wimbledon, London branch.'
           name='keywords'
         />
         <meta href={`${Canonical}/membership`} rel='canonical' />
@@ -37,7 +34,7 @@ const PageMembership = () => {
           name='dcterms.description'
         />
         <meta
-          content='content="Green Touch Group Plans. Buy 5 Massage Treatments Get 1 FREE"'
+          content='Green Touch Group Plans. Buy 5 Massage Treatments Get 1 FREE'
           property='og:title'
         />
         <meta
