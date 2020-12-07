@@ -1,5 +1,5 @@
 /**
- * Book Message
+ * Components - Treatment - Card
  */
 
 import styled from 'styled-components'

@@ -1,5 +1,5 @@
 /**
- * Home
+ * Treatment
  */
 
 // Next
@@ -11,7 +11,7 @@ import { Canonical } from 'config'
 // Components
 import { Treatment } from 'components'
 
-const PageMassages = () => {
+const PageTreatment = () => {
   return (
     <>
       <Head>
@@ -52,4 +52,4 @@ const PageMassages = () => {
   )
 }
 
-export default PageMassages
+export default PageTreatment
