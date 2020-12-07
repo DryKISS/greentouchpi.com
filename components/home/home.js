@@ -32,7 +32,7 @@ export const Home = () => {
             img: 'assets/images/carousel/stunning-decor.jpg',
             text: (
               <Text context='white'>
-                <Heading content='Stunning décor' tag='h3' />
+                <Heading content='Stunning décor' context='white' tag='h3' />
                 <p>Asian influenced interior design to create the perfect atmosphere</p>
               </Text>
             )
@@ -41,7 +41,7 @@ export const Home = () => {
             img: 'assets/images/carousel/treatment-room.jpg',
             text: (
               <Text context='white'>
-                <Heading content='Treatment Room' tag='h3' />
+                <Heading content='Treatment Room' context='white' tag='h3' />
                 <p>Comfortable, stylish room, massage table and fresh linens every time.</p>
               </Text>
             )
@@ -50,7 +50,7 @@ export const Home = () => {
             img: 'assets/images/carousel/massage-rooms.jpg',
             text: (
               <Text context='white'>
-                <Heading content='Massage rooms' tag='h3' />
+                <Heading content='Massage rooms' context='white' tag='h3' />
                 <p>Relax and unwind at Green Touch in our massage rooms</p>
               </Text>
             )

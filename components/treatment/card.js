@@ -59,5 +59,5 @@ const CoverWrapper = styled.div`
 const StyledListItem = styled(ListItem)`
   padding: 0.5rem;
   text-align: center;
-  border-bottom: 1px solid #ddd;
+  border-top: 1px solid #ddd;
 `
