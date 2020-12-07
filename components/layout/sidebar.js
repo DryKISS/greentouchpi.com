@@ -11,33 +11,9 @@ export const LayoutSidebar = () => {
       <Card
         body={
           <>
-            Fantastic new massage treatments for this autumn. Click to learn more or{' '}
-            <a href='/contactus' title='contact us'>
-              contact us
-            </a>{' '}
-            with any queries.{' '}
-            <ul>
-              <li>Pregnancy massage</li>
-              <li>Cellulite massage</li>
-            </ul>
-          </>
-        }
-        header='New treatments'
-        footer={
-          <Link to='/treatment' passHref>
-            <Button block content='Learn more' context='success' size='sm' />
-          </Link>
-        }
-      />
-
-      <Space marginBottom='lg' />
-
-      <Card
-        body={
-          <>
             Buy 5 treatments get 1 free.{' '}
             <ul>
-              <li>£350 for 6 hours of treatments</li>
+              <li>£375 for 6 hours of treatments</li>
               <li>Share between any friends and family</li>
             </ul>
           </>
@@ -45,7 +21,7 @@ export const LayoutSidebar = () => {
         header='Group Plan'
         footer={
           <Link to='/membership' passHref>
-            <Button block content='Learn more' context='success' size='sm' />
+            <Button block content='Learn more' size='sm' />
           </Link>
         }
       />
@@ -57,7 +33,7 @@ export const LayoutSidebar = () => {
         header='New customers'
         footer={
           <Link to='/membership' passHref>
-            <Button block content='Learn more' context='success' size='sm' />
+            <Button block content='Learn more' size='sm' />
           </Link>
         }
       />
@@ -69,7 +45,7 @@ export const LayoutSidebar = () => {
         header='Refer a friend'
         footer={
           <Link to='/specialoffer' passHref>
-            <Button block content='Learn more' context='success' size='sm' />
+            <Button block content='Learn more' size='sm' />
           </Link>
         }
       />
