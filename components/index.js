@@ -1,4 +1,5 @@
 export * from './bookMassage'
+export * from './contactUs'
 export * from './home'
 export * from './layout'
 export * from './membership'
