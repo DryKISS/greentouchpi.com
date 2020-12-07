@@ -122,7 +122,7 @@ export const LayoutFooter = ({ children }) => {
                 {
                   id: 'footerTerms',
                   name: 'Terms and Conditions',
-                  to: '/terms'
+                  to: '/terms-and-conditions'
                 }
               ]
             }
