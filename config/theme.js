@@ -6,7 +6,7 @@ const COLOUR = {
   dark: 'rgb(0, 55, 83)',
   light: 'rgb(236, 240, 243)',
 
-  white: 'rgb(255, 255, 255)',
+  white: '#fff',
   black: 'rgb(0, 0, 0)',
   gray: '#333333',
 
@@ -52,7 +52,7 @@ const NAVBAR = {
   positionCollapse: 'fixed',
 
   // Link
-  paddingLink: '1rem',
+  paddingLink: '0.5rem',
   colourDefault: COLOUR.black,
   colourHover: COLOUR.primary,
   colourDefaultDesktop: COLOUR.black,
