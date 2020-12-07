@@ -5,7 +5,7 @@
 import styled from 'styled-components'
 
 // UI
-import { Button, Card, Link, List, ListItem, Space } from '@drykiss/industry-ui'
+import { Button, Card, Heading, Link, List, ListItem, Space } from '@drykiss/industry-ui'
 
 export const TreatmentCard = ({ cover, coverDesc, items, query, title }) => {
   return (
@@ -14,7 +14,7 @@ export const TreatmentCard = ({ cover, coverDesc, items, query, title }) => {
         body={
           <>
             <CoverWrapper cover={cover}>
-              <h4>{coverDesc}</h4>
+              <Heading content={coverDesc} tag='h4' />
             </CoverWrapper>
 
             <List unstyled>

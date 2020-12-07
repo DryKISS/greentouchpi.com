@@ -3,7 +3,7 @@
  */
 
 // UI
-import { Card, Column, Row, Space } from '@drykiss/industry-ui'
+import { Card, Column, Link, Row, Space } from '@drykiss/industry-ui'
 
 import { TreatmentCard } from './card'
 import { data } from './data'
@@ -23,9 +23,9 @@ export const Treatment = () => {
             <br /> Please do always communicate with us or your therapist should the pressure be too
             much, or you feel any pain. <br />
             <br /> We highly recommend booking in for at least a 90 minutes massage.{' '}
-            <a href='/terms-and-conditions' title='Terms and Conditions'>
+            <Link to='/terms-and-conditions' passHref title='Terms and Conditions'>
               Terms and conditions
-            </a>{' '}
+            </Link>{' '}
             apply to all our bookings.
           </>
         }

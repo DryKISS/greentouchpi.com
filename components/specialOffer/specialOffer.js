@@ -3,7 +3,7 @@
  */
 
 // UI
-import { Card, Column, Row, Space } from '@drykiss/industry-ui'
+import { Card, Column, Link, Row, Space } from '@drykiss/industry-ui'
 
 export const SpecialOffer = () => {
   return (
@@ -19,13 +19,13 @@ export const SpecialOffer = () => {
                 <br /> Please bookmark this page, and check before you book your massage for any
                 discounts you may be entitled to! <br />
                 <br /> Please{' '}
-                <a href='/contactus' title='contact us'>
+                <Link to='/contactus' passHref title='contact us'>
                   contact us
-                </a>{' '}
+                </Link>{' '}
                 with any queries.{' '}
-                <a href='/terms-and-conditions' title='Terms and Conditions'>
+                <Link to='/terms-and-conditions' passHref title='Terms and Conditions'>
                   Terms and conditions
-                </a>{' '}
+                </Link>{' '}
                 apply.
               </>
             }
@@ -48,14 +48,14 @@ export const SpecialOffer = () => {
                 <br /> And from our hearts you will receive a special box of limited edition Chinese
                 Tea. <br />
                 <br /> Please{' '}
-                <a href='/contactus' title='contact us'>
+                <Link to='/contactus' passHref title='contact us'>
                   contact us
-                </a>{' '}
+                </Link>{' '}
                 with any queries. <br />
                 <br />{' '}
-                <a href='/terms-and-conditions' title='Terms and Conditions'>
+                <Link to='/terms-and-conditions' passHref title='Terms and Conditions'>
                   Terms and conditions
-                </a>{' '}
+                </Link>{' '}
                 apply.
               </>
             }
@@ -70,14 +70,14 @@ export const SpecialOffer = () => {
               <>
                 New customers get £10 off their first 1 hour massage treatment <br />
                 <br /> Please{' '}
-                <a href='/contactus' title='contact us'>
+                <Link to='/contactus' passHref title='contact us'>
                   contact us
-                </a>{' '}
+                </Link>{' '}
                 with any queries. <br />
                 <br />{' '}
-                <a href='/terms-and-conditions' title='Terms and Conditions'>
+                <Link to='/terms-and-conditions' passHref title='Terms and Conditions'>
                   Terms and conditions
-                </a>{' '}
+                </Link>{' '}
                 apply.
               </>
             }
@@ -92,14 +92,14 @@ export const SpecialOffer = () => {
               <>
                 Receive a complimentary 15 minutes, added to your next 1 hour massage <br />
                 <br /> Please{' '}
-                <a href='/contactus' title='contact us'>
+                <Link to='/contactus' passHref title='contact us'>
                   contact us
-                </a>{' '}
+                </Link>{' '}
                 with any queries. <br />
                 <br />{' '}
-                <a href='/terms-and-conditions' title='Terms and Conditions'>
+                <Link to='/terms-and-conditions' passHref title='Terms and Conditions'>
                   Terms and conditions
-                </a>{' '}
+                </Link>{' '}
                 apply.
               </>
             }

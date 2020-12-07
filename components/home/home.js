@@ -3,7 +3,7 @@
  */
 
 // UI
-import { Card, Carousel, Space, Text } from '@drykiss/industry-ui'
+import { Card, Carousel, Heading, Link, Space, Text } from '@drykiss/industry-ui'
 
 export const Home = () => {
   return (
@@ -32,7 +32,7 @@ export const Home = () => {
             img: 'assets/images/carousel/stunning-decor.jpg',
             text: (
               <Text context='white'>
-                <h3 class='heading'> Stunning décor </h3>
+                <Heading content='Stunning décor' tag='h3' />
                 <p>Asian influenced interior design to create the perfect atmosphere</p>
               </Text>
             )
@@ -41,7 +41,7 @@ export const Home = () => {
             img: 'assets/images/carousel/treatment-room.jpg',
             text: (
               <Text context='white'>
-                <h3 class='heading'> Treatment Room </h3>
+                <Heading content='Treatment Room' tag='h3' />
                 <p>Comfortable, stylish room, massage table and fresh linens every time.</p>
               </Text>
             )
@@ -50,7 +50,7 @@ export const Home = () => {
             img: 'assets/images/carousel/massage-rooms.jpg',
             text: (
               <Text context='white'>
-                <h3 class='heading'> Massage rooms </h3>
+                <Heading content='Massage rooms' tag='h3' />
                 <p>Relax and unwind at Green Touch in our massage rooms</p>
               </Text>
             )
@@ -64,37 +64,37 @@ export const Home = () => {
             Based in Wimbledon, servicing south west London and the surrounding south Wimbledon
             area. Just 2 minutes walk from Wimbledon station which is on the District Line or
             overland trains, and across from Al Forno Italian restaurant.{' '}
-            <a href='/contactus' title=' View the Map'>
+            <Link to='/contactus' passHref title=' View the Map'>
               View map
-            </a>
+            </Link>
             . <br />
             <br />
             Green Touch Spa and Massage offers Swedish massage, authentic traditional{' '}
-            <a href='/treatment' title='Green Touch Thai Massage'>
+            <Link to='/treatment' passHref title='Green Touch Thai Massage'>
               Thai Massage
-            </a>
+            </Link>
             , Reflexology, Hot Stone massage, Aromatherapy, Sports massage, and other full body
             massage treatments guaranteed to make you feel fantastic. To help relieve pain, tension,
             improve circulation, detox, improve sleep or just for a relaxing indulgent massage. We
             incorporate all massage techniques, quality massage oils and all treatments are tailored
             to ensure you leave with a spring in your step. <br />
             <br /> A popular treatment at Green Touch Spa and Massage is our amazing{' '}
-            <a href='/treatment' title='anti-stress Swedish massage'>
+            <Link to='/treatment' passHref title='anti-stress Swedish massage'>
               anti-stress Swedish massage
-            </a>
+            </Link>
             . You can benefit from our exclusive{' '}
-            <a href='/membership' title='membership scheme'>
+            <Link to='/membership' passHref title='membership scheme'>
               group massage plan
-            </a>{' '}
+            </Link>{' '}
             Buy 5 treatments and get 1 free. <br />
             <br /> Our Spa has a clean and modern oriental décor, with real mahogany doors,
             candlelit corridors, Thai inspired art and asian ornaments. You will be offered a
             complimentary tea/water upon your arrival with our upmost professional service. <br />
             <br /> All massages can be tailored to suit your taste and style. For any other
             requirements please{' '}
-            <a href='/contactus' title='contact us'>
+            <Link to='/contactus' passHref title='contact us'>
               contact us
-            </a>
+            </Link>
             .
           </>
         }
