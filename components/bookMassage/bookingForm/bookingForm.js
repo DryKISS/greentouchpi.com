@@ -28,13 +28,16 @@ import {
 
 import { schema } from './schema'
 
-export const BookingForm = ({ ...args }) => {
+export const BookingForm = ({ defaultTreatment }) => {
   const [loading, setLoading] = useState(false)
   const [message, setMessage] = useState({
     type: '',
     text: ''
   })
   const { control, errors, handleSubmit, register, reset } = useForm({
+    defaultValues: {
+      treatment: defaultTreatment || ''
+    },
     resolver: yupResolver(schema)
   })
 
@@ -135,32 +138,32 @@ export const BookingForm = ({ ...args }) => {
                   value: 'Pregnancy Massage'
                 },
                 {
-                  text: 'Cellulite massage',
-                  value: 'Cellulite massage'
+                  text: 'Cellulite Massage',
+                  value: 'Cellulite Massage'
                 },
                 {
-                  text: 'Sports massage',
-                  value: 'Sports massage'
+                  text: 'Sports Massage',
+                  value: 'Sports Massage'
                 },
                 {
-                  text: 'Deep tissue massage',
-                  value: 'Deep tissue massage'
+                  text: 'Deep tissue Massage',
+                  value: 'Deep tissue Massage'
                 },
                 {
-                  text: 'Reflexology massage',
-                  value: 'Reflexology massage'
+                  text: 'Reflexology Massage',
+                  value: 'Reflexology Massage'
                 },
                 {
-                  text: 'Aromatherapy massage',
-                  value: 'Aromatherapy massage'
+                  text: 'Aromatherapy Massage',
+                  value: 'Aromatherapy Massage'
                 },
                 {
                   text: 'Back, neck, shoulder',
                   value: 'Back, neck, shoulder'
                 },
                 {
-                  text: 'Head massage',
-                  value: 'Head massage'
+                  text: 'Head Massage',
+                  value: 'Head Massage'
                 }
               ]}
               name='treatment'

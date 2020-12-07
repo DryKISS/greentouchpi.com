@@ -22,7 +22,7 @@ export const data = [
       'Increases blood circulation',
       'Yogic stretches helps flexibility'
     ],
-    query: 'Green Touch Signature Thai Massage',
+    query: 'Green+Touch+Signature+Thai+Massage',
     title: 'Green Touch Signature Thai Massage'
   },
   {
@@ -30,7 +30,7 @@ export const data = [
     coverDesc:
       'Totally relaxation, stimulating yet calming, designed to work on muscle tension at the deepest level',
     items: ['£80 per hour', 'Deep relaxation', 'Ease tension', 'Heat soothes aching muscles'],
-    query: 'Smoothing Hot Stone Massage',
+    query: 'Smoothing+Hot+Stone+Massage',
     title: 'Smoothing Hot Stone Massage'
   },
   {
@@ -43,7 +43,7 @@ export const data = [
       'Relief from cramps, spasms, and myofascial pain',
       'Increase in circulation, which can reduce swelling'
     ],
-    query: 'Pregnancy Massage',
+    query: 'Pregnancy+Massage',
     title: 'Pregnancy Massage'
   },
   {
@@ -56,7 +56,7 @@ export const data = [
       'Repeated massages decrease the dimples',
       'Lowers stress by increasing body confidence'
     ],
-    query: 'Cellulite Massage',
+    query: 'Cellulite+Massage',
     title: 'Cellulite Massage'
   },
   {
@@ -69,7 +69,7 @@ export const data = [
       'Prevents injuries by increasing strength',
       'Promotes flexibility in joints and tendons'
     ],
-    query: 'Sports Massage',
+    query: 'Sports+Massage',
     title: 'Sports Massage'
   },
   {
@@ -82,7 +82,7 @@ export const data = [
       'Breaks up scar tissue',
       'Target knots and release muscle tension'
     ],
-    query: 'Deep tissue Massage',
+    query: 'Deep+tissue+Massage',
     title: 'Deep tissue Massage'
   },
   {
@@ -95,7 +95,7 @@ export const data = [
       'Relieves stress and aids sleep',
       'Stimulates lymphatic drainage and physical healing'
     ],
-    query: 'Reflexology Massage',
+    query: 'Reflexology+Massage',
     title: 'Reflexology Massage'
   },
   {
@@ -108,7 +108,7 @@ export const data = [
       'Enhances emotional wellbeing',
       'Encourages deeper and more relaxed breathing'
     ],
-    query: 'Aromatherapy Massage',
+    query: 'Aromatherapy+Massage',
     title: 'Aromatherapy Massage'
   },
   {
@@ -120,7 +120,7 @@ export const data = [
       'Relieves back, shoulder and stiff aches',
       'Deeply relaxing, reduces stress and muscle tension'
     ],
-    query: 'Back, neck, shoulder',
+    query: 'Back,+neck,+shoulder',
     title: 'Back, neck, shoulder'
   },
   {
@@ -133,7 +133,7 @@ export const data = [
       'Reduces stress, anxiety and depression',
       'Relieves tension that can result in migraines'
     ],
-    query: 'Head Massage',
+    query: 'Head+Massage',
     title: 'Head Massage'
   }
 ]

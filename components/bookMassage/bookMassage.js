@@ -2,12 +2,17 @@
  * Book Message
  */
 
+// Next
+import { useRouter } from 'next/router'
+
 // UI
 import { Card, Space } from '@drykiss/industry-ui'
 
 import { BookingForm } from './bookingForm'
 
 export const BookMassage = () => {
+  const { query } = useRouter()
+
   return (
     <>
       <Card
@@ -34,7 +39,10 @@ export const BookMassage = () => {
         }
       />
       <Space marginBottom='lg' />
-      <Card body={<BookingForm />} header='Booking Form' />
+      <Card
+        body={<BookingForm key={query?.t} defaultTreatment={query?.t} />}
+        header='Booking Form'
+      />
     </>
   )
 }
