@@ -21,11 +21,11 @@ const Layout = ({ children }) => {
       <main>
         <Container>
           <Row>
-            <Column xs={12} md={9}>
+            <Column xs={12} md={12} lg={9}>
               {children}
             </Column>
 
-            <SidebarColumn xs={12} md={3}>
+            <SidebarColumn xs={12} md={12} lg={3}>
               <LayoutSidebar />
             </SidebarColumn>
           </Row>
