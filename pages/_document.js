@@ -6,6 +6,9 @@
 import Document, { Head, Html, Main, NextScript } from 'next/document'
 import { ServerStyleSheet } from 'styled-components'
 
+// Config
+import { Canonical } from 'config'
+
 export default class MyDocument extends Document {
   static async getInitialProps (ctx) {
     const sheet = new ServerStyleSheet()
@@ -45,7 +48,10 @@ export default class MyDocument extends Document {
           <meta content='DryKISS' name='dcterms.publisher' />
           <meta content='en' name='dcterms.language' />
           <meta content='DryKISS' name='dcterms.creator' />
-          <meta content='/assets/images/carousel/stunning-decor.jpg' property='og:image' />
+          <meta
+            content={`${Canonical}/assets/images/carousel/stunning-decor.jpg`}
+            property='og:image'
+          />
           <meta content='Greentouch PI' property='og:site_name' />
           <meta content='website' property='og:type' />
           <meta property='fb:app_id' />
