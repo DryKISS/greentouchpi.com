@@ -13,7 +13,7 @@ export const LayoutHeader = () => (
     <StyledContainer>
       <Link border={false} context='white' passHref title='Green Touch Spa and Massage' to='/'>
         <Figure>
-          <Figure.Image src='assets/images/greentouch-logo.png' itemprop='contentUrl' />
+          <Figure.Image src='/assets/images/greentouch-logo.png' itemprop='contentUrl' />
           <Figure.Caption>
             Traditional Thai massage treatments in Wimbledon, London, UK
           </Figure.Caption>

@@ -15,7 +15,7 @@ export const Blog = {
 }
 
 export const Brand = {
-  logo: 'assets/images/greentouch-logo.png',
+  logo: '/assets/images/greentouch-logo.png',
   name: 'Green Touch'
 }
 

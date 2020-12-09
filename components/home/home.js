@@ -29,7 +29,7 @@ export const Home = () => {
         numberOfItems={1}
         slides={[
           {
-            img: 'assets/images/carousel/stunning-decor.jpg',
+            img: '/assets/images/carousel/stunning-decor.jpg',
             text: (
               <Text context='white'>
                 <Heading content='Stunning décor' context='white' tag='h3' />
@@ -38,7 +38,7 @@ export const Home = () => {
             )
           },
           {
-            img: 'assets/images/carousel/treatment-room.jpg',
+            img: '/assets/images/carousel/treatment-room.jpg',
             text: (
               <Text context='white'>
                 <Heading content='Treatment Room' context='white' tag='h3' />
@@ -47,7 +47,7 @@ export const Home = () => {
             )
           },
           {
-            img: 'assets/images/carousel/massage-rooms.jpg',
+            img: '/assets/images/carousel/massage-rooms.jpg',
             text: (
               <Text context='white'>
                 <Heading content='Massage rooms' context='white' tag='h3' />
