@@ -5,6 +5,9 @@
 // Next
 import { useRouter } from 'next/router'
 
+// Styled Components
+import styled from 'styled-components'
+
 // UI
 import { Card, Space } from '@drykiss/industry-ui'
 
@@ -39,10 +42,14 @@ export const BookMassage = () => {
         }
       />
       <Space marginBottom='lg' />
-      <Card
+      <StyledCard
         body={<BookingForm key={query?.t} defaultTreatment={query?.t} />}
         header='Booking Form'
       />
     </>
   )
 }
+
+const StyledCard = styled(Card)`
+  overflow: initial;
+`
