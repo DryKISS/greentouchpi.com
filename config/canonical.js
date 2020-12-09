@@ -1,4 +1,4 @@
 /**
  * Canonical
  */
-module.exports = 'https://dev.greentouchpi.com'
+module.exports = 'https://greentouchpi.com'
