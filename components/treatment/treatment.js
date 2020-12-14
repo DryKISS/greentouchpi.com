@@ -39,9 +39,9 @@ export const Treatment = () => {
       <Space marginBottom='lg' />
 
       <Row>
-        {data.map(treatment => (
+        {data.map((treatment, idx) => (
           <Column key={treatment.title} md={4} xs={12}>
-            <TreatmentCard {...treatment} />
+            <TreatmentCard index={idx} {...treatment} />
           </Column>
         ))}
       </Row>

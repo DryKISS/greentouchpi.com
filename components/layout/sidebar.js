@@ -18,9 +18,10 @@ export const LayoutSidebar = () => {
             </ul>
           </>
         }
+        headerContext='success'
         header='Group Plan'
         footer={
-          <Link to='/membership' passHref>
+          <Link fullWidth to='/membership' passHref>
             <Button block content='Learn more' size='sm' />
           </Link>
         }
@@ -30,9 +31,10 @@ export const LayoutSidebar = () => {
 
       <Card
         body='New customers get £10 off their first 1 hour massage treatment'
+        headerContext='secondary'
         header='New customers'
         footer={
-          <Link to='/membership' passHref>
+          <Link fullWidth to='/membership' passHref>
             <Button block content='Learn more' size='sm' />
           </Link>
         }
@@ -42,9 +44,10 @@ export const LayoutSidebar = () => {
 
       <Card
         body='Receive a complimentary 15 minutes, added to your next 1 hour massage'
+        headerContext='info'
         header='Refer a friend'
         footer={
-          <Link to='/specialoffer' passHref>
+          <Link fullWidth to='/specialoffer' passHref>
             <Button block content='Learn more' size='sm' />
           </Link>
         }
