@@ -39,11 +39,11 @@ const NAVBAR = {
   paddingDesktop: '0',
 
   // Overlay
-  backgroundOverlay: COLOUR.gray90,
-  widthOverlay: '180px',
+  backgroundOverlay: COLOUR.primary,
+  widthOverlay: '220px',
 
   // Toggler
-  colourToggler: COLOUR.white,
+  colourToggler: COLOUR.black,
   fontSizeToggler: '0.875',
   paddingToggler: '0.25rem 0',
   colourHoverToggler: COLOUR.black,

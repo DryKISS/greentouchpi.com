@@ -88,6 +88,10 @@ const NavWrapper = styled.div`
       background-color: unset;
     }
   }
+
+  [class*='collapse__NavCollapse'] {
+    margin: 0.5rem;
+  }
 `
 
 const StyledContainer = styled(Container)`
