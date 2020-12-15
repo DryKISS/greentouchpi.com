@@ -6,8 +6,9 @@ import styled from 'styled-components'
 
 // UI
 import { Button, Card, Heading, Link, List, ListItem, Space } from '@drykiss/industry-ui'
+import { getRandomCardContext } from 'utils'
 
-export const TreatmentCard = ({ cover, coverDesc, items, query, title }) => {
+export const TreatmentCard = ({ cover, coverDesc, index, items, query, title }) => {
   return (
     <>
       <StyledCard
@@ -22,13 +23,14 @@ export const TreatmentCard = ({ cover, coverDesc, items, query, title }) => {
                 <StyledListItem key={item}>{item}</StyledListItem>
               ))}
               <StyledListItem>
-                <Link to={`/book-massage?t=${query}`} passHref>
+                <Link fullWidth to={`/book-massage?t=${query}`} passHref>
                   <Button block content='Reserve Now' />
                 </Link>
               </StyledListItem>
             </List>
           </>
         }
+        headerContext={getRandomCardContext(index)}
         header={title}
       />
       <Space marginBottom='lg' />

@@ -5,16 +5,16 @@
 // UI
 import { Card, Column, List, ListItem, Row, Space } from '@drykiss/industry-ui'
 
-import { TreatmentCard } from './card'
+import { MembershipCard } from './card'
 import { data } from './data'
 
 export const Membership = () => {
   return (
     <>
       <Row>
-        {data.map(treatment => (
+        {data.map((treatment, idx) => (
           <Column key={treatment.title} md={6} xs={12}>
-            <TreatmentCard {...treatment} />
+            <MembershipCard index={idx} {...treatment} />
           </Column>
         ))}
 

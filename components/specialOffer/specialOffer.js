@@ -60,6 +60,7 @@ export const SpecialOffer = () => {
               </>
             }
             header='Birthday Treat'
+            headerContext='success'
           />
           <Space marginBottom='lg' />
         </Column>
@@ -82,6 +83,7 @@ export const SpecialOffer = () => {
               </>
             }
             header='New customers'
+            headerContext='secondary'
           />
           <Space marginBottom='lg' />
         </Column>
@@ -104,6 +106,7 @@ export const SpecialOffer = () => {
               </>
             }
             header='Refer a friend'
+            headerContext='info'
           />
           <Space marginBottom='lg' />
         </Column>
