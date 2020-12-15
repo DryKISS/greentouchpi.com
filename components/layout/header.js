@@ -14,7 +14,7 @@ export const LayoutHeader = () => (
       <Link border={false} context='white' passHref title='Green Touch Spa and Massage' to='/'>
         <Figure>
           <Figure.Image src='/assets/images/greentouch-logo.png' itemprop='contentUrl' />
-          <Figure.Caption>
+          <Figure.Caption bgContext='transparent'>
             Traditional Thai massage treatments in Wimbledon, London, UK
           </Figure.Caption>
         </Figure>
@@ -88,6 +88,10 @@ const NavWrapper = styled.div`
       background-color: unset;
     }
   }
+
+  [class*='collapse__NavCollapse'] {
+    margin: 0.5rem;
+  }
 `
 
 const StyledContainer = styled(Container)`
@@ -95,10 +99,5 @@ const StyledContainer = styled(Container)`
 
   img {
     display: initial;
-  }
-
-  figcaption {
-    background-color: unset;
-    color: #fff;
   }
 `

@@ -32,7 +32,7 @@ console.log('- CNAME created')
 // Robots
 const robotsText = `User-agent: *
 Sitemap: ${Canonical}/sitemap.xml
-Disallow:`
+Disallow: `
 
 fs.writeFileSync(`${directory}/robots.txt`, robotsText)
 console.log('- Robots.txt created')

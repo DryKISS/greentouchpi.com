@@ -6,8 +6,9 @@ import styled from 'styled-components'
 
 // UI
 import { Card, List, ListItem, Space } from '@drykiss/industry-ui'
+import { getRandomCardContext } from 'utils'
 
-export const TreatmentCard = ({ coverDesc, items, title }) => {
+export const MembershipCard = ({ coverDesc, index, items, title }) => {
   return (
     <>
       <StyledCard
@@ -22,6 +23,7 @@ export const TreatmentCard = ({ coverDesc, items, title }) => {
             </List>
           </>
         }
+        headerContext={getRandomCardContext(index)}
         header={title}
       />
       <Space marginBottom='lg' />

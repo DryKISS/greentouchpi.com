@@ -43,8 +43,10 @@ Layout.propTypes = {
 }
 
 const SidebarColumn = styled(Column)`
+  margin-top: 1.5rem;
   ${MEDIA_QUERY.desktop`
     order: -1;
+    margin-top: 0;
   `}
 `
 

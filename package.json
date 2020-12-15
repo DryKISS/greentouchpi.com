@@ -75,7 +75,7 @@
     ]
   },
   "dependencies": {
-    "@drykiss/industry-ui": "1.8.2",
+    "@drykiss/industry-ui": "1.9.2",
     "deepmerge": "^4.2.2",
     "next": "^10.0.2",
     "react": "^17.0.1",
