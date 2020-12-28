@@ -44,6 +44,7 @@ const PageIndex = () => {
         />
         <meta content={`${Canonical}/book-message`} property='og:url' />
       </Head>
+
       <BookMassage />
     </>
   )

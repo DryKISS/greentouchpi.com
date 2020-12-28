@@ -70,14 +70,9 @@ const NAVBAR = {
   borderBottomHoverListItem: 'none'
 }
 
-const TYPOGRAPHY = {
-  font: '"Archivo", sans-serif'
-}
-
 export const Theme = {
   COLOUR,
   COPYRIGHT,
   FOOTER,
-  NAVBAR,
-  TYPOGRAPHY
+  NAVBAR
 }

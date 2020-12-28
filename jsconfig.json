@@ -5,11 +5,8 @@
   "include": [
     "components/**/*",
     "config/**/*",
-    "constant/**/*",
-    "cypress/**/*",
     "layouts/**/*",
     "pages/**/*",
-    "queries/**/*",
     "utils/**/*"
   ]
 }

@@ -10,7 +10,6 @@ import styled from 'styled-components'
 
 // UI
 import { Card, Space } from '@drykiss/industry-ui'
-
 import { BookingForm } from './bookingForm'
 
 export const BookMassage = () => {

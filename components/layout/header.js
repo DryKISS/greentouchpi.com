@@ -10,6 +10,7 @@ import { Container, Figure, Link, Navbar, Space } from '@drykiss/industry-ui'
 export const LayoutHeader = () => (
   <>
     <Space marginBottom='xxl' />
+
     <StyledContainer>
       <Link border={false} context='white' passHref title='Green Touch Spa and Massage' to='/'>
         <Figure>

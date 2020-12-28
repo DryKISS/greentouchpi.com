@@ -15,7 +15,7 @@ export const data = [
     items: [
       'Treatment prices of £45, £75 and £85 per hour.',
       '30 mins £45, 60 mins £75 and 90 mins £100.',
-      'Extra £5 for Hot Stone, Aromatherapay and Celluite.',
+      'Extra £5 for Hot Stone, Aromatherapy and Cellulite.',
       'Pay by cash or card at the treatment end',
       'Communicate your preferred pressure and style'
     ],

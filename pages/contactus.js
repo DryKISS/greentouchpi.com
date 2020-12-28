@@ -44,6 +44,7 @@ const PageContactUs = () => {
         />
         <meta content={`${Canonical}/contactus`} property='og:url' />
       </Head>
+
       <ContactUs />
     </>
   )

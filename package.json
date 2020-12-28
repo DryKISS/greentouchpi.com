@@ -5,7 +5,6 @@
   "version": "1.0.0",
   "scripts": {
     "start": "next",
-    "start:prod": "next start",
     "standard": "standard --verbose | snazzy",
     "standard-fix": "standard --fix --verbose | snazzy",
     "prettier": "prettier-standard --staged --lint",
@@ -18,10 +17,7 @@
     "production": "push-dir --dir=out --remote=git@github.com:DryKISS/greentouchpi.com.git --branch=gh-pages",
     "clean-cache": "rimraf -rf ./node_modules/.cache",
     "serve": "serve out",
-    "check": "yarn upgrade-interactive",
-    "analyze": "ANALYZE=true next build",
-    "analyze:server": "BUNDLE_ANALYZE=server next build",
-    "analyze:browser": "BUNDLE_ANALYZE=browser next build"
+    "check": "yarn upgrade-interactive"
   },
   "engines": {
     "node": "^12"
@@ -75,26 +71,25 @@
     ]
   },
   "dependencies": {
-    "@drykiss/industry-ui": "1.9.2",
-    "deepmerge": "^4.2.2",
-    "next": "^10.0.2",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1",
-    "styled-components": "^5.2.0"
+    "@drykiss/industry-ui": "1.9.3",
+    "next": "10.0.4",
+    "react": "17.0.1",
+    "react-dom": "17.0.1",
+    "styled-components": "5.2.1"
   },
   "devDependencies": {
     "babel-eslint": "^10.1.0",
-    "babel-plugin-styled-components": "^1.11.1",
+    "babel-plugin-styled-components": "^1.12.0",
     "fs-extra": "^9.0.1",
-    "husky": "^4.3.0",
-    "lint-staged": "^10.4.0",
+    "husky": "^4.3.6",
+    "lint-staged": "^10.5.3",
     "prettier-standard": "^16.4.1",
     "push-dir": "^0.4.1",
     "serve": "^11.3.2",
-    "snazzy": "^8.0.0",
-    "standard": "^14.3.4",
-    "start-server-and-test": "^1.11.5",
-    "stylelint": "^13.7.2",
+    "snazzy": "^9.0.0",
+    "standard": "^16.0.3",
+    "start-server-and-test": "^1.11.7",
+    "stylelint": "^13.8.0",
     "stylelint-config-prettier": "^8.0.2",
     "stylelint-config-standard": "^20.0.0",
     "stylelint-config-styled-components": "^0.1.1",

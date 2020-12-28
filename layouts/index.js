@@ -10,8 +10,6 @@ import styled from 'styled-components'
 
 // UI
 import { Column, Container, MEDIA_QUERY, Row, Space } from '@drykiss/industry-ui'
-
-// Components
 import { LayoutFooter, LayoutHeader, LayoutSidebar } from 'components'
 
 const Layout = ({ children }) => {

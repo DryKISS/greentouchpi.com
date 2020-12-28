@@ -1,6 +1,7 @@
 /**
  * App
  */
+
 // UI
 import { MyApp } from '@drykiss/industry-ui'
 
@@ -9,7 +10,6 @@ import Layout from 'layouts'
 
 // Config
 import { Config, Theme } from 'config'
-
 import 'config/icons'
 
 // Styles

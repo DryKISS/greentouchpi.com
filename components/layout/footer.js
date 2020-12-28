@@ -130,6 +130,7 @@ export const LayoutFooter = ({ children }) => {
           }
         ]}
       />
+
       <Container>
         <StyledCopyright
           links={[
